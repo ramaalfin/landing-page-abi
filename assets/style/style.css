@@ -57,7 +57,7 @@ img {
 
 .title {
   background-color: var(--blue);
-  padding: 30px 100px;
+  padding: 30px 80px;
   text-transform: uppercase;
   color: var(--yellow);
 }
@@ -320,9 +320,9 @@ img {
   box-shadow: 15px 15px 45px 0px rgb(0 0 0 / 30%);
   border-radius: 7px;
 }
-.quote .img {
+/* .quote .img {
   width: 220px;
-}
+} */
 
 .quote .container-text {
   padding: 50px 40px;
@@ -467,10 +467,79 @@ img {
 }
 
 
+/* Disclaimer */
+.disclaimer .row > * {
+  padding: 0px;
+}
+.disclaimer .container {
+  max-width: 70%;
+}
+.disclaimer .main-bg {
+  display: flex;
+  background-color: #179ffe;
+  box-shadow: 15px 15px 45px 0px rgb(0 0 0 / 30%);
+  border-radius: 7px;
+}
+
+.disclaimer .container-text {
+  padding: 50px 40px;
+}
+
+.disclaimer .container-text p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.disclaimer .personal-info {
+  display: flex;
+  margin-top: 32px;
+}
+
+.disclaimer .personal-info p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.disclaimer .personal-info #name {
+  margin-right: 5px;
+}
+
+/* Promosi */
 
 
 
+.promosi .main-bg {
+  max-width: 70%;
+  display: flex;
+  background-color: #179ffe;
+  box-shadow: 15px 15px 45px 0px rgb(0 0 0 / 30%);
+  border-radius: 7px;
+}
 
+.promosi .container-text {
+  padding: 30px 20px;
+}
+
+.promosi li{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.promosi p{
+  font-size: 20px;
+}
+
+.promosi .desc-title{
+  font-size: 18px;
+}
+.promosi li{
+  display: flex;
+}
+.promosi i{
+  margin-right: 10px;
+}
 
 /* FAQ */
 
@@ -493,7 +562,7 @@ footer h5 {
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 footer li {
@@ -538,22 +607,19 @@ footer .copyright p {
   margin: 0px;
 }
 
-@media screen and (min-width: 992px) {
-  .custom-video,
-  .news-detail-image {
-    object-fit: cover;
-    height: 100vh;
+@media screen and (max-width: 992px) {
+  .banner-text{
+    width: 80%;
+  }
+  .banner-text h1{
+    font-size: 30px !important;
   }
 
-  .sticky-wrapper {
-    position: relative;
+  .title{
+    padding: 25px 55px;
   }
-}
-
-@media screen and (max-width: 991px) {
-  .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .title p{
+    font-size: 20px;
   }
 }
 
