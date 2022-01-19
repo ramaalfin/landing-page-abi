@@ -34,10 +34,9 @@ h6 {
   margin: 0;
 }
 
-p {
+p{
   margin: 0;
-  line-height: 28px;
-  font-size: 30px;
+  padding: 0;
 }
 
 a,
@@ -60,11 +59,7 @@ img {
   padding: 30px 80px;
   text-transform: uppercase;
   color: var(--yellow);
-}
-
-.title p,
-.title a {
-  font-size: 24px;
+  font-size: 22px !important;
 }
 
 .title .underline {
@@ -74,7 +69,6 @@ img {
   letter-spacing: 0.05em;
   display: inline-block;
   position: relative;
-  font-size: 22px;
   font-weight: 600;
 }
 .title .underline:after {
@@ -608,18 +602,146 @@ footer .copyright p {
 }
 
 @media screen and (max-width: 992px) {
+  .mt-4{
+    margin-top: 1rem !important;
+  }
+  .mt-5{
+    margin-top: 1.5rem !important;
+  }
+  .mb-5{
+    margin-top: 1.5rem !important;
+  }
+  .ms-3 {
+    margin-left: 0.5rem!important;
+  }
+  section{
+    padding: 35px 50px;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
   .banner-text{
     width: 80%;
   }
   .banner-text h1{
-    font-size: 30px !important;
+    font-size: 27px !important;
   }
 
   .title{
-    padding: 25px 55px;
+    padding: 20px 50px;
+    font-size: 18px !important;
   }
-  .title p{
+
+  /* BIO */
+  .bio .container-img {
+    height: 390px;
+  }
+  .bio .primary-img {
+    width: 300px;
+    height: 300px;
+  }
+  .bio .container-text {
+    height: 220px;
+  }
+  .bio .text {
+    margin-right: -90px;
+  }
+  .bio .text .salam {
     font-size: 20px;
+  }
+  .bio .text .intro {
+    font-size: 18px;
+  }
+  .bio .text .mt-4{
+    margin-top: 1rem !important;
+  }
+
+  /* IMPIAN */
+  .impian h2, .bukan-impian h2 {
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+  }
+  .impian p, .bukan-impian p {
+    font-size: 18px;
+  }
+
+  /* QUOTE */
+  .quote .container {
+    max-width: 84%;
+  }
+  .quote .container-text {
+    padding: 35px 40px;
+  }
+  .quote .container-text p {
+    font-size: 18px;
+  }
+  .quote .personal-info {
+    margin-top: 25px;
+  }
+  .quote .personal-info #name,
+  .quote .personal-info #job {
+    font-size: 18px;
+  }
+
+  /* PRODUk */
+  .yBoxFrame {
+    max-width: calc(50% - 10px);
+  }
+
+  /* PREMI */
+  .premi .img-premi {
+    max-width: 65%;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer .container {
+    max-width: 84%;
+  }
+  .disclaimer .container-text {
+    padding: 35px 40px;
+  }
+  .disclaimer .container-text p {
+    font-size: 18px;
+  }
+  .disclaimer .personal-info {
+    margin-top: 25px;
+  }
+  .disclaimer .personal-info #name,
+  .disclaimer .personal-info #job {
+    font-size: 18px;
+  }
+
+  /* PROMOSI */
+  .promosi .main-bg {
+    max-width: 84%;
+  }
+  .promosi li, .promosi p {
+    font-size: 18px;
+  }
+  .fa-ul {
+    margin-left: 1em;
+  }
+
+  /* ABOUT */
+  .card {
+    width: 100%;
+  }
+  .about span{
+    font-size: 15px;
+  }
+
+  /* FAQ */
+  .faq .accordion {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .accordion-button {
+    font-size: 18px;
+  }
+  .accordion-body {
+    font-size: 16px;
   }
 }
 
