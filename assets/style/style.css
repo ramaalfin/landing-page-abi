@@ -989,13 +989,13 @@ footer .copyright p {
     font-size: calc(1.1rem + .6vw);
   }
   .yBoxFrame.yBoxImgWrap {
-    height: calc(49vh - 80px);
+    height: calc(65vh - 80px);
   }
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
     height: calc(100vh - 80px);
   }
   .yBoxImgZoom {
-    height: 49%;
+    height: 62%;
   }
   .yBoxFrame {
     max-width: calc(80% - 10px);
