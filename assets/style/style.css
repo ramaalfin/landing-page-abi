@@ -995,7 +995,7 @@ footer .copyright p {
     height: calc(60vh - 80px);
   }
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(100vh - 80px);
+    height: calc(90vh - 80px);
   }
   .yBoxImgZoom {
     height: 60%;
