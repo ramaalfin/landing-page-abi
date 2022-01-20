@@ -293,7 +293,7 @@ img {
 }
 
 .impian p, .bukan-impian p{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .impian .img-fluid, .bukan-impian .img-fluid{
@@ -481,7 +481,7 @@ img {
 
 .disclaimer .container-text p {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -541,7 +541,7 @@ img {
   max-width: 65%;
 }
 .accordion-button {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* FOOTER */
@@ -550,9 +550,12 @@ footer {
   background-color: #222;
 }
 
-footer h5 {
+footer h4 {
   color: #d8d8d8;
-  font-weight: 700;
+  font-weight: 500;
+}
+footer h6{
+  color: #d8d8d8;
 }
 
 footer p {
@@ -666,6 +669,9 @@ footer .copyright p {
   .impian p, .bukan-impian p {
     font-size: 18px;
   }
+  .impian .img-fluid, .bukan-impian .img-fluid {
+    max-width: 76% !important;
+  }
 
   /* QUOTE */
   .quote .container {
@@ -687,8 +693,18 @@ footer .copyright p {
 
   /* PRODUk */
   .yBoxFrame {
-    max-width: calc(50% - 10px);
+    max-width: calc(60% - 10px);
   }
+  .closeYbox {
+    width: 40px;
+    height: 40px;
+  }
+  .closeYbox::after, .closeYbox::before {
+    width: 25px;
+    left: 8px;
+    top: 18px; 
+  }
+
 
   /* PREMI */
   .premi .img-premi {
@@ -731,6 +747,9 @@ footer .copyright p {
   .about span{
     font-size: 15px;
   }
+  .mfp-image-holder .mfp-content {
+    max-width: 70%;
+  }
 
   /* FAQ */
   .faq .accordion {
@@ -745,38 +764,370 @@ footer .copyright p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .container-img {
-    order: 0;
+@media screen and (max-width: 768px) {
+  section {
+    padding: 35px 70px;
+  }
+  h4{
+    font-size: 1.2rem !important;
+  }
+  /* BANNER */
+  .banner-text {
+    width: 70%;
+  }
+  .banner-text h1 {
+    font-size: 20px !important;
   }
 
-  .container-text {
-    margin-top: 30px;
-    height: 360px;
-    justify-content: center;
-    order: 1;
+  .title {
+    padding: 15px 30px;
+    font-size: 14px !important;
   }
 
-  .text {
-    text-align: center;
-    margin: 0;
-  }
+  /* BIO */
 
-  .container-text img {
-    left: auto;
+  .bio .row{
+    flex-direction: column-reverse;
   }
-
-  .personal-info {
-    flex-direction: column;
+  .bio .bg-img {
+    left: 3%;
     width: 100%;
-    margin-top: 20px;
+    height: 88%;
+  }
+  .bio .primary-img {
+    width: 250px;
+    height: 250px;
+  }
+  .bio .container-text {
+    margin-top: 30px;
+    height: 180px;
+  }
+  .bio .text {
+    margin-right: 0px;
   }
 
-  #name {
-    margin: 0;
+  .bio .text .mt-4 {
+    margin-top: 0.7rem !important;
+  }
+  .bio .text .intro {
+    font-size: 14px;
+  }
+  .bio .personal-info {
+    margin-top: 0px;
+  }
+  .bio #name {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+  .bio #job {
+    font-size: 15px;
+  }
+  
+  /* IMPIAN DAN BUKAN IMPIAN */
+  .impian h2, .bukan-impian h2 {
+    font-size: 1.25rem !important;
+  }
+  .impian p, .bukan-impian p {
+    font-size: 14px;
+  }
+  .impian h3{
+    font-size: 20px;
+  }
+  .impian .img-fluid, .bukan-impian .img-fluid {
+    max-width: 60% !important;
   }
 
-  #job {
-    margin: 0;
+  /* QUOTE */
+  .quote .container-text p {
+    font-size: 15px;
   }
+  .quote .personal-info #name, .quote .personal-info #job {
+    font-size: 13px;
+  }
+
+  /* PRODUK */
+  .produk-list h2{
+    font-size: 22px;
+  }
+  .produk-list p {
+    font-size: 12px;
+  }
+  .produk-list .mt-3{
+    margin-top: unset !important;
+  }
+  .yBoxFrame {
+    max-width: calc(37% - 10px);
+  }
+  .closeYbox {
+    width: 25px;
+    height: 25px;
+  }
+  .closeYbox::after, .closeYbox::before {
+    width: 15px;
+    left: 5px;
+    top: 12px;
+  }
+
+  /* PREMI */
+  .premi .img-premi {
+    max-width: 50%;
+  }
+  .premi p {
+    font-size: 14px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer .container-text {
+    padding: 25px 30px;
+  }
+  .disclaimer .container-text p {
+    font-size: 14px;
+  }
+
+  /* PROMOSI */
+  .promosi li, .promosi p {
+    font-size: 14px;
+  }
+  .promosi .desc-title {
+    font-size: 14px;
+  }
+  .promosi .container-text {
+    padding: 20px;
+  }
+
+  /* ABOUT */
+  .about span {
+    font-size: 12px;
+  }
+  .mfp-image-holder .mfp-content {
+    max-width: 30%;
+  }
+
+  /* FAQ */
+  .accordion-button {
+    font-size: 16px;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:479px) {
+  h4 {
+    font-size: 1rem !important;
+  } 
+
+  section {
+    padding: 20px 30px;
+  }
+  .banner-img {
+    padding-bottom: 55%;
+  }
+  .banner-text {
+    width: 90%;
+  }
+  .banner-text h1 {
+    font-size: 16px !important;
+  }
+  .title {
+    padding: 10px 15px;
+    font-size: 14px !important;
+  }
+
+  /*  BIO */
+  .bio .bg-img {
+    left: 5%;
+    width: 91%;
+    height: 83%;
+    top: 1%;
+  }
+  .bio .primary-img {
+    width: 225px;
+    height: 225px;
+  }
+  .bio .text .salam {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .bio .container-text {
+    height: 175px;
+  }
+  .bio .text .intro {
+    text-align: justify;
+  }
+
+
+  /* IMPIAN DAN BUKAN IMPIAN */
+  section.impian, section.bukan-impian{
+    padding: 20px;
+  }
+  .impian .img-fluid, .bukan-impian .img-fluid {
+    max-width: 99% !important;
+  }
+
+  /* QUOTE */
+  .quote .container {
+    max-width: 100%;
+  }
+  .quote .container-text {
+    padding: 20px;
+  }
+  .quote .container-text p {
+    font-size: 14px;
+  }
+  .quote .personal-info {
+    margin-top: 15px;
+  }
+
+  /* PRODUK */
+  .produk-list h3{
+    font-weight: 600;
+    font-size: calc(1.1rem + .6vw);
+  }
+  .yBoxFrame.yBoxImgWrap {
+    height: calc(49vh - 80px);
+  }
+  .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
+    height: calc(100vh - 80px);
+  }
+  .yBoxImgZoom {
+    height: 49%;
+  }
+  .yBoxFrame {
+    max-width: calc(80% - 10px);
+  }
+  .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
+    padding: 0px;
+  }
+
+  /* PREMI */
+  section.premi {
+    padding: 20px;
+  }
+  .premi .img-premi{
+    max-width: 100%;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer .container {
+    max-width: 100%;
+  }
+  .disclaimer .container-text {
+    padding: 20px;
+  }
+  .disclaimer .container-text p {
+    font-size: 15px;
+  }
+  .disclaimer .personal-info {
+    margin-top: 15px;
+  }
+
+  /* PROMOSI */
+  .promosi .main-bg {
+    max-width: 100%;
+  }
+  .promosi .container-text {
+    padding: 10px 25px 20px 10px;
+  }
+  .promosi .container-text p {
+    font-size: 14px;
+  }
+  .promosi .personal-info {
+    margin-top: 15px;
+  }
+
+  /* ACCORDION */
+  .accordion-button {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+  .accordion-body {
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  footer .container{
+    padding: 0px 25px;
+  }
+  footer .pt-5 {
+    padding-top: 2rem!important;
+  }
+  .footer{
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section {
+    padding: 10px 20px;
+  }
+  .mb-5 {
+    margin-bottom: 2rem!important;
+  }
+  h3 {
+    font-size: calc(1.1rem + .6vw);
+  }
+  .banner-text {
+    width: 94%;
+  }
+  .banner-text h1 {
+    font-size: 14px !important;
+  }
+
+  .title {
+    font-size: 13px !important;
+    letter-spacing: .1px;
+  }
+
+  /* BIO */
+  .bio .container-img {
+    height: 315px;
+  }
+  .bio .primary-img {
+    width: 200px;
+    height: 200px;
+    top: 23%;
+  }
+  .bio .bg-img {
+    left: 8%;
+    width: 87%;
+    height: 87%;
+    top: 6%;
+  }
+  .bio .container-text {
+    height: 165px;
+  }
+
+  /* IMPIAN DAN BUKAN IMPIAN */
+  section.impian, section.bukan-impian {
+    padding: 10px;
+  }
+  .impian .img-fluid, .bukan-impian .img-fluid {
+    max-width: 100% !important;
+  }
+
+  /* PRODUK */
+  .produk-list h3 {
+    font-size: calc(1rem + .6vw);
+  }
+  .produk-list .mb-3 {
+    margin-bottom: 0rem!important;
+  }
+
+  /* FAQ */
+  section.faq {
+    padding: 10px 5px;
+  }
+  .accordion-button {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .accordion-body {
+    font-size: 14px;
+    padding: 1rem;
+  } 
 }
