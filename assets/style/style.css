@@ -440,6 +440,9 @@ img {
   max-width: calc(30% - 10px);
   background: white;
 }
+.yBoxImgZoom {
+  background: #fff;
+}
 .closeYbox{
   width: 30px;
   height: 30px;
