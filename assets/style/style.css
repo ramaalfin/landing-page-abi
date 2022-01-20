@@ -992,7 +992,7 @@ footer .copyright p {
     font-size: calc(1.1rem + .6vw);
   }
   .yBoxFrame.yBoxImgWrap {
-    height: calc(65vh - 80px);
+    height: calc(58vh - 80px);
   }
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
     height: calc(90vh - 80px);
