@@ -998,7 +998,7 @@ footer .copyright p {
     height: calc(100vh - 80px);
   }
   .yBoxImgZoom {
-    height: 62%;
+    height: 60%;
   }
   .yBoxFrame {
     max-width: calc(80% - 10px);
