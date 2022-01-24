@@ -358,7 +358,7 @@ section.quote{
   min-height: 60vh;
 }
 .single-item{
-  width: 50%;
+  width: 70%;
 	margin: 30px auto;
 }
 .bubble blockquote {
@@ -510,7 +510,7 @@ section.about{
 
 /* CARA KERJA */
 section.cara{
-  color: #fff;
+  color: #f6f6f6;
   background-color: var(--darkgreen);
 }
 .cara .main-bg {
@@ -533,7 +533,6 @@ section.cara{
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
-  color: #fff;
 }
 
 .cara .download{
@@ -542,7 +541,6 @@ section.cara{
 
 .cara .note{
   font-size: 16px;
-  color: #fff;
 }
 
 .cara .download p{
@@ -552,7 +550,7 @@ section.cara{
 .cara .download button{
   background-color: var(--darkyellow);
   color: #000;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 4px;
   text-transform: uppercase;
   border: transparent;
@@ -803,8 +801,26 @@ fieldset {
   .banner-text{
     width: 80%;
   }
+
+  .banner-img {
+    min-height: 71vh;
+  }
+
   .banner-text h1{
     font-size: 27px !important;
+  }
+
+  .banner-text h1::before {
+    bottom: 48px;
+  }
+
+  .banner-text {
+    top: 33%;
+  }
+
+  .banner-text p {
+    font-size: 18px;
+    margin: 50px 0px 0px;
   }
 
   .title{
@@ -859,6 +875,19 @@ fieldset {
     max-width: 76% !important;
   }
 
+  /* QUOTE */
+  section.quote{
+    min-height: 50vh;
+  }
+  .quote .single-item {
+    width: 65%;
+    margin: 20px auto;
+  }
+
+  .bubble blockquote {
+    font-size: 20px;
+  }
+
   /* PRODUk */
   .yBoxFrame {
     max-width: calc(40% - 10px);
@@ -873,13 +902,32 @@ fieldset {
     top: 14px;
   }
 
+  /* CARA */
+  .cara .main-bg {
+    max-width: 70%;
+  }
+  .cara .list {
+    padding: 30px 10px;
+  }
+  .cara .download {
+    font-size: 17px;
+  }
+  .cara .list li {
+    font-size: 18px;
+  }
+  .cara .note {
+    font-size: 15px;
+  }
+  .cara button{
+    font-size: 16px;
+  }
 
   /* DISCLAIMER */
   .disclaimer .main-bg {
-    max-width: 84%;
+    max-width: 70%;
   }
   .disclaimer .container-text {
-    padding: 35px 40px;
+    padding: 30px 35px;
   }
   .disclaimer .container-text p {
     font-size: 18px;
@@ -894,16 +942,26 @@ fieldset {
 
   /* PROMOSI */
   .promosi .main-bg {
-    max-width: 84%;
+    max-width: 70%;
   }
   .promosi li, .promosi p {
     font-size: 18px;
   }
   .fa-ul {
-    margin-left: 1em;
+    margin-left: unset;
+  }
+  .promosi .text1 {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .promosi .text2 {
+    margin-top: 10px;
   }
 
   /* ABOUT */
+  section.about {
+    padding: 70px 80px;
+  }
   .card {
     width: 100%;
   }
