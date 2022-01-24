@@ -114,8 +114,8 @@ img {
 .banner-text {
   position: absolute;
   z-index: 9;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 10%;
   width: 80%;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -131,7 +131,7 @@ img {
   content: "";
   position: absolute;
   left: 0px;
-  bottom: -25px;
+  bottom: 48px;
   height: 3px;
   width: 60px;
   background: var(--darkyellow);
@@ -143,12 +143,12 @@ img {
 
 .banner-text p{
   font-size: 20px;
-  margin: 50px 0px;
+  margin: 50px 0px 0px;
 }
 
 .banner-img {
   position: relative;
-  padding-bottom: 52%;
+  min-height: 100vh;
 }
 
 .banner-img img {
