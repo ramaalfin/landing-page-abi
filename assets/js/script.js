@@ -15,25 +15,42 @@
       $("#" + categoryId).addClass("active");
     });
   });
-
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
+  
+  $('.single-item').slick({
+    dots: true,
+    infinite: true,
     autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  })
-
+    autoplaySpeed: 3000,
+    speed: 800,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    fade: true,
+    arrows: false
+  });
+  
+  
 })(window.jQuery);
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 5,
+  autoplay: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
+  }
+});
+
+// QUOTE SLIDE
+
 
 // MODAL TENTANG KAMI
 
@@ -54,3 +71,4 @@ $('.parent-container').magnificPopup({
     }
   }
 });
+
