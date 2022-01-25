@@ -1011,6 +1011,32 @@ fieldset {
   .accordion-body {
     font-size: 16px;
   }
+
+  /* FOOTER */
+  .footer-logo img {
+    max-width: 160px;
+    margin-bottom: 10px;
+
+  }
+  .footer-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .footer-social-icon{
+    display: flex;
+  }
+  .footer-widget{
+    font-size: 18px;
+  }
+  .footer-widget textarea{
+    font-size: 16px;
+  }
+  .copy{
+    font-size: 18px;
+  }
+  #contact button{
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 768px) {
