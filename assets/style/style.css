@@ -144,6 +144,7 @@ img {
 .banner-text p{
   font-size: 20px;
   margin: 50px 0px 0px;
+  text-transform: capitalize;
 }
 
 .banner-img {
@@ -779,11 +780,8 @@ fieldset {
   color: #7e7e7e;
 }
 
-.footer-content a{
-  color: #7e7e7e;;
-}
-
-@media screen and (max-width: 992px) {
+/* TABLET */
+@media screen and (min-width: 800px) and (max-width: 850px) {
   .mt-4{
     margin-top: 1rem !important;
   }
@@ -791,6 +789,9 @@ fieldset {
     margin-left: 0.5rem!important;
   }
   section{
+    padding: 60px 50px;
+  }
+  section.bio{
     padding: 35px 50px;
   }
 
@@ -803,29 +804,32 @@ fieldset {
   }
 
   .banner-img {
-    min-height: 71vh;
+    min-height: 48vh;
   }
 
   .banner-text h1{
-    font-size: 27px !important;
+    font-size: 40px !important;
   }
 
   .banner-text h1::before {
-    bottom: 48px;
+    bottom: 70px;
+    height: 5px;
+    width: 70px;
   }
 
   .banner-text {
-    top: 33%;
+    top: 20%;
   }
 
   .banner-text p {
-    font-size: 18px;
+    font-size: 21px;
     margin: 50px 0px 0px;
+    
   }
 
   .title{
-    padding: 20px 50px;
-    font-size: 18px !important;
+    padding: 20px 45px;
+    font-size: 18px;
   }
 
   /* BIO */
@@ -853,6 +857,7 @@ fieldset {
   }
 
   /* IMPIAN */
+  
   .impian h2, .bukan-impian h2 {
     font-weight: 500 !important;
     font-size: 1.5rem !important;
@@ -873,14 +878,19 @@ fieldset {
   }
   .impian .img-fluid, .bukan-impian .img-fluid {
     max-width: 76% !important;
+  }
+
+  section.andai{
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   /* QUOTE */
   section.quote{
-    min-height: 50vh;
+    min-height: 35vh;
   }
   .quote .single-item {
-    width: 65%;
+    width: 80%;
     margin: 20px auto;
   }
 
@@ -890,36 +900,42 @@ fieldset {
 
   /* PRODUk */
   .yBoxFrame {
-    max-width: calc(40% - 10px);
+    max-width: calc(60% - 10px);
   }
   .closeYbox {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .closeYbox::after, .closeYbox::before {
-    width: 21px;
-    left: 5px;
-    top: 14px;
+    width: 30px;
+    left: 6px;
+    top: 18px;
   }
 
   /* CARA */
   .cara .main-bg {
-    max-width: 70%;
+    max-width: 90%;
   }
   .cara .list {
     padding: 30px 10px;
   }
   .cara .download {
-    font-size: 17px;
+    font-size: 18px;
   }
   .cara .list li {
     font-size: 18px;
   }
   .cara .note {
-    font-size: 15px;
+    font-size: 16px;
   }
   .cara button{
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .download .mt-3{
+    margin-top: 1.5rem !important;
+  }
+  .download .mb-3{
+    margin-bottom: 1.5rem !important;
   }
 
   /* DISCLAIMER */
@@ -951,22 +967,25 @@ fieldset {
     margin-left: unset;
   }
   .promosi .text1 {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 18px;
   }
   .promosi .text2 {
     margin-top: 10px;
   }
+  .promosi .main-bg1, .promosi .main-bg2 {
+    max-width: 85%;
+  }
 
   /* ABOUT */
   section.about {
-    padding: 70px 80px;
+    padding: 60px 40px;
   }
   .card {
     width: 100%;
   }
   .about span{
-    font-size: 16px;
+    font-size: 18px;
   }
   .card .card-body .items-about {
     overflow: scroll;
