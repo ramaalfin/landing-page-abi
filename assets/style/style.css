@@ -50,7 +50,7 @@ input {
 }
 
 section {
-  padding: 70px 80px;
+  padding: 55px 80px;
 }
 
 
@@ -1041,22 +1041,30 @@ fieldset {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 35px 70px;
+    padding: 45px 70px;
   }
   h4{
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
   }
   /* BANNER */
   .banner-text {
-    width: 70%;
+    width: 75%;
+    top: 22%;
+    left: 8%;
+  }
+  .banner-img {
+    min-height: 50vh;
   }
   .banner-text h1 {
-    font-size: 20px !important;
+    font-size: 35px !important;
+  }
+  .banner-text h1::before {
+    bottom: 70px;
+    height: 4px;
   }
 
   .title {
-    padding: 15px 30px;
-    font-size: 14px !important;
+    padding: 20px 35px;
   }
 
   /* BIO */
@@ -1064,38 +1072,42 @@ fieldset {
   .bio .row{
     flex-direction: column-reverse;
   }
+  .bio .col-md-6 {
+    width: 80%;
+  }
   .bio .bg-img {
-    left: 3%;
-    width: 100%;
-    height: 88%;
+    top: -7%;
+    left: 8%;
+    width: 88%;
+    height: 104%;
   }
   .bio .primary-img {
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
   }
   .bio .container-text {
     margin-top: 30px;
-    height: 180px;
+    height: 200px;
   }
   .bio .text {
     margin-right: 0px;
   }
 
   .bio .text .mt-4 {
-    margin-top: 0.7rem !important;
+    margin-top: 1rem !important;
   }
   .bio .text .intro {
-    font-size: 14px;
+    font-size: 20px;
   }
   .bio .personal-info {
     margin-top: 0px;
   }
   .bio #name {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 8px;
   }
   .bio #job {
-    font-size: 15px;
+    font-size: 20px;
   }
   
   /* IMPIAN DAN BUKAN IMPIAN */
@@ -1103,16 +1115,21 @@ fieldset {
     font-size: 1.25rem !important;
   }
   .impian p, .bukan-impian p {
-    font-size: 14px;
+    font-size: 20px;
   }
   .impian h3{
     font-size: 20px;
   }
   .impian .img-fluid, .bukan-impian .img-fluid {
-    max-width: 60% !important;
+    max-width: 89% !important;
   }
-  .impian .list, .bukan-impian .list{
-    margin: 0px 55px;
+
+  .impian .list{
+    margin-top: -65px;
+  }
+
+  .title p {
+    font-size: 20px !important;
   }
 
   /* PRODUK */
