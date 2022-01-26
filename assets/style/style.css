@@ -1178,9 +1178,6 @@ fieldset {
   }
 }
 
-/* ipon 6 */
-
-
 /* IPHONE 4 */
 @media screen and (min-width: 320px){
   h4 {
@@ -1199,24 +1196,24 @@ fieldset {
     padding: 25px 15px;
   }
   .banner-img {
-    min-height: 43vh;
+    min-height: 45vh;
   }
   .banner-text {
     width: 80%;
   }
   .banner-text {
-    left: 4%;
-    top: 19%;
-    width: 95%;
-    padding: 0px 15px;
+    left: 0%;
+    top: 15%;
+    width: 100%;
+    padding: 0px 25px;
   }
   .banner-text h1 {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
   .banner-text p {
-    font-size: 13px;
-    margin: 20px 0px 0px;
-    line-height: 20px;
+    font-size: 12px;
+    margin: 15px 0px 0px;
+    line-height: 18px;
   }
 
   /* BIO */
@@ -1379,7 +1376,7 @@ fieldset {
     font-size: 12px;
   }
   .cara .download button {
-    padding: 5px 15px;
+    padding: 3px 12px;
 
   }
   .cara .download .note{
@@ -1473,7 +1470,7 @@ fieldset {
   .accordion-button {
     font-size: 12px;
     line-height: 20px;
-    padding: 1rem .7rem;
+    padding: 1rem .5rem;
   }
   .accordion-button::after {
     width: 1rem;
@@ -1490,7 +1487,7 @@ fieldset {
 
   /* FOOTER */
   .footer-logo img {
-    max-width: 140px;
+    max-width: 130px;
   }
   .footer-content {
     padding: 0px 10px;
@@ -1531,5 +1528,26 @@ fieldset {
   #contact button {
     font-size: 12px;
   }
+}
 
+/* ipon 6 */
+@media screen and (min-width: 375px){
+  .banner-img {
+    min-height: 40vh;
+  }
+  .banner-text {
+    width: 90%;
+  }
+
+  /* PROMOSI */
+  .promosi .text3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 414px){
+  .banner-text {
+    width: 80%;
+  }
 }
