@@ -1196,7 +1196,7 @@ fieldset {
     padding: 25px 15px;
   }
   .banner-img {
-    min-height: 45vh;
+    min-height: 48vh;
   }
   .banner-text {
     width: 80%;
@@ -1208,7 +1208,7 @@ fieldset {
     padding: 0px 25px;
   }
   .banner-text h1 {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
   .banner-text p {
     font-size: 12px;
