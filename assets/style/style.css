@@ -1331,14 +1331,14 @@ fieldset {
   .banner-text {
     left: 5%;
     top: 22%;
-    width: 90%;
-    text-align: center;
+    width: 95%;
+    padding: 0px 15px;
   }
   .banner-text h1 {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
   .banner-text p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 26px 0px 0px;
     line-height: 20px;
   }
