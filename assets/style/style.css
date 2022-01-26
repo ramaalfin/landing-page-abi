@@ -59,12 +59,12 @@ img {
   position: relative;
 }
 
-.title {
+.title, .daftar {
   background-color: var(--darkyellow);
   padding: 25px 80px;
 }
 
-.title .underline {
+.daftar .underline {
   font-size: 20px !important;
   color: var(--dark-color);
   text-decoration: none;
@@ -73,13 +73,13 @@ img {
   font-weight: 700;
 }
 
-.title p {
+.title p{
   font-size: 18px !important;
   color: var(--dark-color);
   font-weight: 600;
 }
 
-.title .underline:after {
+.daftar .underline:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -91,12 +91,12 @@ img {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.title .underline:hover:after {
+.daftar .underline:hover:after {
   width: 100%;
   left: 0;
 }
 
-.title .text-title {
+.title .text-title, .daftar .text-title {
   width: 100%;
 }
 
@@ -355,7 +355,6 @@ section.bukan-impian{
 section.quote{
   background-color: var(--darkgreen);
   padding: 25px 80px;
-  font-size: 20px !important;
   min-height: 60vh;
 }
 .single-item{
@@ -536,15 +535,12 @@ section.cara{
   line-height: 30px;
 }
 
-.cara .download{
-  font-size: 18px;
-}
-
-.cara .note{
+.cara .note p{
   font-size: 16px;
 }
 
 .cara .download p{
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -603,7 +599,6 @@ section.cara{
 .promosi li{
   font-size: 18px;
   color: #fff;
-  margin-top: 10px;
 }
 
 .promosi .text1{
@@ -780,8 +775,13 @@ fieldset {
   color: #7e7e7e;
 }
 
+
+/* RESPONSIVE */
+
+
+
 /* TABLET */
-@media screen and (min-width: 800px) and (max-width: 850px) {
+@media screen and (min-width: 800px) and (max-width: 992px) {
   .mt-4{
     margin-top: 1rem !important;
   }
@@ -1039,7 +1039,7 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   section {
     padding: 45px 70px;
   }
@@ -1200,6 +1200,7 @@ fieldset {
     font-size: 12px;
   }
 }
+
 @media screen and (max-width:479px) {
   h4 {
     font-size: 1rem !important;
@@ -1208,9 +1209,7 @@ fieldset {
   section {
     padding: 20px 30px;
   }
-  .banner-img {
-    padding-bottom: 55%;
-  }
+  
   .banner-text {
     width: 90%;
   }
@@ -1219,7 +1218,6 @@ fieldset {
   }
   .title {
     padding: 10px 15px;
-    font-size: 14px !important;
   }
 
   /*  BIO */
@@ -1250,22 +1248,8 @@ fieldset {
     padding: 20px;
   }
   .impian .img-fluid, .bukan-impian .img-fluid {
-    max-width: 99% !important;
+    max-width: 100% !important;
   }
-
-  /* QUOTE */
-  /* .quote .container {
-    max-width: 100%;
-  }
-  .quote .container-text {
-    padding: 20px;
-  }
-  .quote .container-text p {
-    font-size: 14px;
-  }
-  .quote .personal-info {
-    margin-top: 15px;
-  } */
 
   /* PRODUK */
   .produk-list h3{
@@ -1353,70 +1337,345 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 360px) {
-  section {
-    padding: 10px 20px;
+/* IPHONE 4 */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mb-2, .mb-3, .mb-4, .mb-5{
+    margin-bottom: unset !important;
   }
-  h3 {
-    font-size: calc(1.1rem + .6vw);
+  .mt-3, .mt-4, .mt-5{
+    margin-top: unset !important;
+  }
+  .ms-3{
+    margin-left: unset !important;
+  }
+  section{
+    padding: 25px 15px;
+  }
+  .banner-img {
+    min-height: 40vh;
   }
   .banner-text {
-    width: 94%;
+    width: 80%;
+  }
+  .banner-text {
+    top: 20%;
+    width: 80%;
   }
   .banner-text h1 {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
-
-  .title {
-    font-size: 13px !important;
-    letter-spacing: .1px;
+  .banner-text h1::before {
+    bottom: 62px;
+    height: 2px;
+    width: 40px;
+  }
+  .banner-text p {
+    font-size: 12px;
+    margin: 26px 0px 0px;
+    line-height: 17px;
   }
 
   /* BIO */
-  .bio .container-img {
-    height: 315px;
+  section.bio .row{
+    flex-direction: column-reverse;
   }
-  .bio .primary-img {
-    width: 200px;
-    height: 200px;
-    top: 23%;
+  section.bio{
+    padding: 25px 30px;
+  }
+  .bio .container-img {
+    height: 280px;
   }
   .bio .bg-img {
-    left: 8%;
-    width: 87%;
-    height: 87%;
+    left: 5%;
+    width: 91%;
+    height: 85%;
     top: 6%;
   }
-  .bio .container-text {
-    height: 165px;
+  .bio .primary-img {
+    width: 180px;
+    height: 180px;
   }
 
-  /* IMPIAN DAN BUKAN IMPIAN */
-  section.impian, section.bukan-impian {
-    padding: 10px;
+  .bio .container-text {
+    margin-top: 5px;
+    height: 185px;
   }
-  .impian .img-fluid, .bukan-impian .img-fluid {
+  .bio .text{
+    margin-right: unset;
+  }
+  .bio .text .salam {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .bio .text .intro {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .bio .text .personal-info {
+    margin-top: unset;
+  }
+  .bio #name {
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  .bio #job{
+    font-size: 12px;
+  }
+
+  .daftar {
+    padding: 5px 15px;
+  }
+  .daftar .underline {
+    font-size: 13px !important;
+  }
+
+  /* IMPIAN */
+  .impian .img-fluid, .bukan-impian .img-fluid, .andai .img-fluid {
     max-width: 100% !important;
+  }
+  section.impian h4{
+    font-size: .9rem !important;
+  }
+  section.impian .p{
+    margin-top: -40px;
+  }
+  .impian p, .bukan-impian p, .andai p {
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 20px;
+  }
+
+  section.bukan-impian {
+    padding-top: 0px !important;
+  }
+  section.bukan-impian h4{
+    font-size: 12px !important;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+
+  .title {
+    padding: 20px;
+  }
+  .title p{
+    font-size: 13px !important;
+  }
+
+  /* QUOTES */
+  section.quote {
+    padding: 10px;
+    min-height: 45vh;
+  }
+  section.quote h4{
+    margin-top: 20px;
+  }
+  .single-item {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .bubble blockquote {
+    margin: 0px 10px 10px;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .bubble blockquote:before, .bubble blockquote:after {
+    font-size: 40px;
+    padding: 5px;
+  }
+  .bubble blockquote:before {
+    left: 5px;
+  }
+  .bubble blockquote:after {
+    right: 5px;
   }
 
   /* PRODUK */
-  .produk-list h3 {
-    font-size: calc(1rem + .6vw);
+  .produk {
+    max-width: 75%;
+    margin: 0px auto;
   }
-  .produk-list .mb-3 {
-    margin-bottom: 0rem!important;
+  .produk-list p {
+    font-size: 12px;
+    line-height: 17px;
+  } 
+  .closeYbox::after, .closeYbox::before {
+    width: 15px;
+    left: 3.5px;
+    top: 10.5px;
+  }
+  .closeYbox {
+    width: 22px;
+    height: 22px;
+} 
+
+  /* CARA */
+  .cara .list {
+    padding: 15px 5px;
+  }
+  .cara .title-text {
+    margin-bottom: 18px;
+  }
+  .cara .main-bg{
+    max-width: 100%;
+  }
+  .cara .list ol{
+    padding-left: 1rem;
+  }
+  .cara .list li {
+    font-size: 12px;
+    line-height: 35px;
+  }
+  .cara .list li p{
+    line-height: 20px;
+    margin-left: 5px;
+  }
+  .cara .download p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .cara .download button{
+    font-size: 12px;
+  }
+  .cara .download button {
+    padding: 5px 15px;
+
+  }
+  .cara .download .note{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer .title-text {
+    margin-bottom: 20px;
+  }
+  .disclaimer .container-text {
+    padding: 15px;
+  }
+  .disclaimer .container-text p {
+    font-size: 13px;
+  }
+
+  .promosi .text1 {
+    margin-top: 45px;
+    font-size: 15px;
+  }
+  .promosi .main-bg1, .promosi .main-bg2 {
+    max-width: 100%;
+    margin: 25px 0px;
+  } 
+  .promosi .container-text {
+    padding: 20px 15px;
+  }
+  .promosi li {
+    font-size: 12px;
+  }
+  .promosi .text2 {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .promosi p{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .promosi .text3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* ABOUT */
+  section.about {
+    padding: 25px 5px;
+  }
+  .about .items-menu span{
+    font-size: 11px;
+  }
+  .card .card-body {
+    padding: 10px 5px;
+  }
+  .card {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .card .card-body .items-about .items-menu a {
+    padding: 5px 10px;
+  }
+  .card .img-fluid {
+    max-width: 85%;
+    margin: 0px auto;
   }
 
   /* FAQ */
-  section.faq {
-    padding: 10px 5px;
+  section.faq{
+    padding: 40px 15px;
+  }
+  section.faq h3 {
+    font-size: calc(1rem + .6vw);
+  }
+  .faq .accordion {
+    max-width: 100%;
+    margin-top: 10px;
   }
   .accordion-button {
-    font-size: 14px;
-    padding: 0.5rem;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .accordion-button::after {
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem;
   }
   .accordion-body {
-    font-size: 14px;
-    padding: 1rem;
-  } 
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .accordion-body {
+    padding: 0.6rem 1rem;
+  }
+
+  /* FOOTER */
+  .footer-logo img {
+    max-width: 140px;
+  }
+  .footer-text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-widget-heading h3 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .footer-widget-heading h3::before {
+    bottom: -12px;
+    width: 40px;
+  }
+  .footer-section h6{
+    font-size: .9rem;
+  }
+  .footer-content p{
+    font-size: 12px;
+  }
+  .footer-social-icon a {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .footer-social-icon i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  .footer-widget .email-form{
+    margin-top: 10px;
+  }
+  .footer-widget .email-form input{
+    font-size: 12px;
+  }
+  #contact button {
+    font-size: 13px;
+  }
+
 }
