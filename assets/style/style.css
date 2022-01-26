@@ -1338,7 +1338,7 @@ fieldset {
     font-size: 17px !important;
   }
   .banner-text p {
-    font-size: 12px;
+    font-size: 13px;
     margin: 26px 0px 0px;
     line-height: 20px;
   }
@@ -1576,14 +1576,14 @@ fieldset {
     padding: 40px 15px;
   }
   section.faq h3 {
-    font-size: calc(1rem + .6vw);
+    font-size: calc(.9rem + .6vw);
   }
   .faq .accordion {
     max-width: 100%;
     margin-top: 10px;
   }
   .accordion-button {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
   }
   .accordion-button::after {
@@ -1592,7 +1592,7 @@ fieldset {
     background-size: 1rem;
   }
   .accordion-body {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
   }
   .accordion-body {
