@@ -1352,27 +1352,30 @@ fieldset {
     padding: 25px 15px;
   }
   .banner-img {
-    min-height: 40vh;
+    min-height: 50vh;
   }
   .banner-text {
     width: 80%;
   }
   .banner-text {
-    top: 20%;
-    width: 80%;
+    left: 5%;
+    top: 22%;
+    width: 90%;
+    text-align: center;
   }
   .banner-text h1 {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .banner-text h1::before {
-    bottom: 62px;
+    left: 45%;
+    bottom: 70px;
     height: 2px;
     width: 40px;
   }
   .banner-text p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 26px 0px 0px;
-    line-height: 17px;
+    line-height: 20px;
   }
 
   /* BIO */
