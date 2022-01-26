@@ -127,16 +127,6 @@ img {
   font-weight: 600;
 }
 
-.banner-text h1::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 48px;
-  height: 3px;
-  width: 60px;
-  background: var(--darkyellow);
-}
-
 .banner-text h1 span {
   font-weight: 700;
 }
@@ -1366,12 +1356,6 @@ fieldset {
   .banner-text h1 {
     font-size: 18px !important;
   }
-  .banner-text h1::before {
-    left: 45%;
-    bottom: 70px;
-    height: 2px;
-    width: 40px;
-  }
   .banner-text p {
     font-size: 14px;
     margin: 26px 0px 0px;
@@ -1429,7 +1413,7 @@ fieldset {
     padding: 5px 15px;
   }
   .daftar .underline {
-    font-size: 13px !important;
+    font-size: 12px !important;
   }
 
   /* IMPIAN */
@@ -1461,7 +1445,7 @@ fieldset {
     padding: 20px;
   }
   .title p{
-    font-size: 13px !important;
+    font-size: 12px !important;
   }
 
   /* QUOTES */
@@ -1479,7 +1463,7 @@ fieldset {
   .bubble blockquote {
     margin: 0px 10px 10px;
     padding: 30px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 17px;
   }
   .bubble blockquote:before, .bubble blockquote:after {
@@ -1560,7 +1544,7 @@ fieldset {
     padding: 15px;
   }
   .disclaimer .container-text p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .promosi .text1 {
@@ -1579,10 +1563,10 @@ fieldset {
   }
   .promosi .text2 {
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .promosi p{
-    font-size: 13px;
+    font-size: 12px;
     line-height: 20px;
   }
   .promosi .text3 {
@@ -1678,7 +1662,7 @@ fieldset {
     font-size: 12px;
   }
   #contact button {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 }
