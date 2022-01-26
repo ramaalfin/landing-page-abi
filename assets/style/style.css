@@ -1386,6 +1386,9 @@ fieldset {
   }
 
   /* DISCLAIMER */
+  .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
+    max-width: 90%;
+  }
   .disclaimer .title-text {
     margin-bottom: 20px;
   }
@@ -1444,6 +1447,14 @@ fieldset {
     max-width: 85%;
     margin: 0px auto;
   }
+  .card .card-body .items-about {
+    overflow: scroll;
+    white-space: nowrap;
+    flex-flow: row;
+  }
+  .card .tab-content {
+    padding: 0px 16px;
+  }
 
   /* FAQ */
   section.faq{
@@ -1459,6 +1470,7 @@ fieldset {
   .accordion-button {
     font-size: 12px;
     line-height: 20px;
+    padding: 1rem .7rem;
   }
   .accordion-button::after {
     width: 1rem;
@@ -1476,6 +1488,9 @@ fieldset {
   /* FOOTER */
   .footer-logo img {
     max-width: 140px;
+  }
+  .footer-content {
+    padding: 0px 10px;
   }
   .footer-text p {
     font-size: 12px;
