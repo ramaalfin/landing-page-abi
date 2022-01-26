@@ -1328,7 +1328,7 @@ fieldset {
 
   /* PRODUK */
   .produk {
-    max-width: 75%;
+    max-width: 60%;
     margin: 0px auto;
   }
   .produk-list p {
@@ -1343,7 +1343,16 @@ fieldset {
   .closeYbox {
     width: 22px;
     height: 22px;
-} 
+  } 
+  .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
+    height: calc(55vh - 80px);
+  }
+  .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
+    height: calc(55vh - 80px);
+  }
+  .yBoxFrame {
+    max-width: calc(82% - 10px);
+  }
 
   /* CARA */
   .cara .list {
@@ -1533,16 +1542,45 @@ fieldset {
 /* ipon 6 */
 @media screen and (min-width: 375px){
   .banner-img {
-    min-height: 40vh;
+    min-height: 55vh;
   }
   .banner-text {
-    width: 90%;
+    width: 95%;
+    left: 3%;
+    top: 16%;
+  }
+  .banner-text h1 {
+    font-size: 28px !important;
+  } 
+
+  /* BIO */
+  section.bio {
+    padding: 25px 35px;
+  }
+  .bio .text .salam {
+    margin-top: 10px;
+  }
+
+  /* IMPIAN */
+  section.bukan-impian h4 {
+    font-size: 14px !important;
+    line-height: 18px;
+  }
+  .impian p, .bukan-impian p, .andai p {
+    line-height: 19px;
+  }
+  .andai .list{
+    margin-top: 15px;
   }
 
   /* PROMOSI */
   .promosi .text3 {
     margin-top: 20px;
     margin-bottom: 5px;
+  }
+
+  .title p {
+    line-height: 19px;
   }
 }
 
