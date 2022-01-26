@@ -999,7 +999,7 @@ fieldset {
     margin-left: unset !important;
   }
   section{
-    padding: 25px 15px;
+    padding: 35px 15px;
   }
   .banner-img {
     min-height: 48vh;
@@ -1046,7 +1046,7 @@ fieldset {
 
   .bio .container-text {
     margin-top: 5px;
-    height: 200px;
+    height: 240px;
   }
   .bio .text{
     margin-right: unset;
@@ -1056,7 +1056,7 @@ fieldset {
     margin-bottom: 5px;
   }
   .bio .text .intro {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     margin-top: 5px !important;
   }
@@ -1065,18 +1065,18 @@ fieldset {
     justify-content: left;
   }
   .bio #name {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 6px;
   }
   .bio #job{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .daftar {
     padding: 5px 15px;
   }
   .daftar .underline {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   /* IMPIAN */
@@ -1087,10 +1087,10 @@ fieldset {
     font-size: .9rem !important;
   }
   section.impian .p{
-    margin-top: 30px;
+    margin-top: -40px;
   }
   .impian p, .bukan-impian p, .andai p {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 5px;
     line-height: 20px;
   }
@@ -1099,16 +1099,19 @@ fieldset {
     padding-top: 0px !important;
   }
   section.bukan-impian h4{
-    font-size: 12px !important;
+    font-size: 14px !important;
     margin-bottom: 20px;
     line-height: 20px;
+  }
+  .impian .list, .bukan-impian .list, .andai .list{
+    margin-top: 20px;
   }
 
   .title {
     padding: 20px;
   }
   .title p{
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   /* QUOTES */
@@ -1126,7 +1129,7 @@ fieldset {
   .bubble blockquote {
     margin: 0px 10px 10px;
     padding: 30px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
   }
   .bubble blockquote:before, .bubble blockquote:after {
@@ -1146,7 +1149,7 @@ fieldset {
     margin: 0px auto;
   }
   .produk-list p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
   } 
   .closeYbox::after, .closeYbox::before {
@@ -1182,7 +1185,7 @@ fieldset {
     padding-left: 1rem;
   }
   .cara .list li {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 35px;
   }
   .cara .list li p{
@@ -1190,16 +1193,16 @@ fieldset {
     margin-left: 5px;
   }
   .cara .download p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     margin-top: 25px;
     margin-bottom: 15px;
   }
   .cara .download button{
-    font-size: 12px;
+    font-size: 14px;
   }
   .cara .download button {
-    padding: 3px 12px;
+    padding: 3px 14px;
 
   }
   .cara .download .note{
@@ -1219,29 +1222,29 @@ fieldset {
     padding: 15px;
   }
   .disclaimer .container-text p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .promosi .text1 {
     margin-top: 45px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .promosi .main-bg1, .promosi .main-bg2 {
     max-width: 100%;
     margin: 25px 0px;
   } 
   .promosi .container-text {
-    padding: 20px 15px;
+    padding: 20px 5px;
   }
   .promosi li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .promosi .text2 {
     margin-top: 15px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .promosi p{
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   .promosi .text3 {
@@ -1251,7 +1254,7 @@ fieldset {
 
   /* ABOUT */
   section.about {
-    padding: 25px 5px;
+    padding: 35px 5px;
   }
   .about .items-menu span{
     font-size: 12px;
@@ -1294,7 +1297,7 @@ fieldset {
     margin-top: 10px;
   }
   .accordion-button {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     padding: 1rem .5rem;
   }
@@ -1304,7 +1307,7 @@ fieldset {
     background-size: 1rem;
   }
   .accordion-body {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   .accordion-body {
@@ -1319,7 +1322,7 @@ fieldset {
     padding: 0px 10px;
   }
   .footer-text p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
   }
   .footer-widget-heading h3 {
@@ -1327,14 +1330,14 @@ fieldset {
     margin-bottom: 25px;
   }
   .footer-widget-heading h3::before {
-    bottom: -12px;
+    bottom: -14px;
     width: 40px;
   }
   .footer-section h6{
     font-size: .9rem;
   }
   .footer-content p{
-    font-size: 12px;
+    font-size: 14px;
   }
   .footer-social-icon a {
     font-size: 16px;
@@ -1349,9 +1352,9 @@ fieldset {
     margin-top: 10px;
   }
   .footer-widget .email-form input{
-    font-size: 12px;
+    font-size: 14px;
   }
   #contact button {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
