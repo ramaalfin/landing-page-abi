@@ -1227,7 +1227,7 @@ fieldset {
 
   .promosi .text1 {
     margin-top: 45px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .promosi .main-bg1, .promosi .main-bg2 {
     max-width: 100%;
@@ -1237,11 +1237,11 @@ fieldset {
     padding: 20px 5px;
   }
   .promosi li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .promosi .text2 {
     margin-top: 15px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .promosi p{
     font-size: 14px;
@@ -1252,7 +1252,7 @@ fieldset {
     margin-bottom: 10px;
   }
   .promosi .desc-title {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   /* ABOUT */
