@@ -766,28 +766,6 @@ fieldset {
 
 /* TABLET */
 
-@media (max-width: 480px){
-  .banner-text {
-    top: 14%;
-    left: 12%;
-  }
-  .banner-text h1 {
-    font-size: 25px !important;
-  }
-  .banner-text h1::before {
-    top: 76%;
-    width: 50px;
-  }
-  .banner-text p {
-    font-size: 12px;
-    margin: 35px 0px 0px;
-    line-height: 18px;
-  }
-  .banner-img {
-    min-height: 55vh;
-  }
-}
-
 /* IPHONE 4 */
 @media only screen and (min-width: 320px) and (max-width: 360px){
   h4 {
@@ -1179,3 +1157,24 @@ fieldset {
   }
 }
 
+@media only screen and (min-width: 361px) and (max-width: 479px){
+  .banner-text {
+    top: 14%;
+    left: 12%;
+  }
+  .banner-text h1 {
+    font-size: 25px !important;
+  }
+  .banner-text h1::before {
+    top: 76%;
+    width: 50px;
+  }
+  .banner-text p {
+    font-size: 12px;
+    margin: 35px 0px 0px;
+    line-height: 18px;
+  }
+  .banner-img {
+    min-height: 55vh;
+  }
+}
