@@ -766,6 +766,7 @@ fieldset {
 
 /* TABLET */
 
+<<<<<<< HEAD
 @media only screen and (min-width: 361px) and (max-width: 480px){
   .banner-text {
     top: 14%;
@@ -820,6 +821,43 @@ fieldset {
     font-size: 25px !important;
   }
   .banner-text h1::before {
+=======
+
+
+/* IPHONE 4 */
+@media only screen and (min-width: 320px) and (max-width: 360px){
+  h4 {
+    font-size: 1rem !important;
+  }
+  .mb-2, .mb-3, .mb-4, .mb-5{
+    margin-bottom: unset !important;
+  }
+  .mt-3, .mt-4, .mt-5{
+    margin-top: unset !important;
+  }
+  .ms-3{
+    margin-left: unset !important;
+  }
+  section{
+    padding: 35px 15px;
+  }
+  .banner-img {
+    min-height: 48vh;
+  }
+  .banner-text {
+    width: 80%;
+  }
+  .banner-text {
+    left: 0%;
+    top: 12%;
+    width: 100%;
+    padding: 0px 25px;
+  }
+  .banner-text h1 {
+    font-size: 25px !important;
+  }
+  .banner-text h1::before {
+>>>>>>> b07863ab6292928d17855a34bf4d5a154e7a30a5
     content: unset;
     left: 8%;
     top: 70%;
