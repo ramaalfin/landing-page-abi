@@ -765,7 +765,7 @@ fieldset {
 
 /* TABLET */
 
-@media screen and (max-device-width: 768px){ 
+@media screen and (max-device-width: 767px){ 
   section {
     padding: 50px 45px;
   }
@@ -1019,8 +1019,10 @@ fieldset {
   }
 }
 
+@media screen and (max-device-width: 479px){}
+
 /* IPHONE 4 */
-@media screen and (min-device-width: 320px){
+@media screen and (max-device-width: 359px){
   h4 {
     font-size: .9rem !important;
   }
@@ -1052,7 +1054,7 @@ fieldset {
     font-size: 25px !important;
   }
   .banner-text h1::before {
-    left: 8%;
+    left: 7%;
     top: 70%;
     bottom: -25px;
     height: 3px;
@@ -1385,4 +1387,3 @@ fieldset {
     font-size: 14px;
   }
 }
-
