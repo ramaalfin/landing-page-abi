@@ -1019,7 +1019,27 @@ fieldset {
   }
 }
 
-@media screen and (max-device-width: 479px){}
+@media screen and (max-device-width: 479px){
+  .banner-text {
+    left: 3%;
+    top: 11%;
+    padding: 0px 40px;
+  }
+  .banner-text h1 {
+    font-size: 33px !important;
+  }
+  .banner-text h1::before {
+    left: 8%;
+    top: 75%;
+  }
+  .banner-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .banner-img {
+    min-height: 60vh;
+  }
+}
 
 /* IPHONE 4 */
 @media screen and (max-device-width: 359px){
