@@ -772,18 +772,19 @@ fieldset {
     left: 12%;
   }
   .banner-text h1 {
-    font-size: 33px !important;
+    font-size: 25px !important;
   }
   .banner-text h1::before {
     top: 76%;
     width: 50px;
   }
   .banner-text p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 35px 0px 0px;
+    line-height: 18px;
   }
   .banner-img {
-    min-height: 70vh;
+    min-height: 55vh;
   }
 }
 
@@ -820,7 +821,6 @@ fieldset {
     font-size: 25px !important;
   }
   .banner-text h1::before {
->>>>>>> b07863ab6292928d17855a34bf4d5a154e7a30a5
     content: unset;
     left: 8%;
     top: 70%;
