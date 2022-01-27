@@ -902,7 +902,7 @@ fieldset {
   /* QUOTES */
   section.quote {
     padding: 10px;
-    min-height: 40vh;
+    min-height: 35vh;
   }
   section.quote h4{
     margin-top: 20px;
