@@ -796,9 +796,9 @@ fieldset {
     font-size: 32px !important;
   }
   .banner-text h1::before {
-    content: unset;
-    top: 74%;
-    left: 8%;
+    /* content: unset; */
+    top: 80%;
+    left: 7%;
     width: 50px;
   }
   .banner-text p {
