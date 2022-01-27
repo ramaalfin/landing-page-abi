@@ -767,7 +767,103 @@ fieldset {
 
 /* TABLET */
 
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 1rem !important;
+  }
+  .mb-2, .mb-3, .mb-4, .mb-5{
+    margin-bottom: unset !important;
+  }
+  .mt-3, .mt-4, .mt-5{
+    margin-top: unset !important;
+  }
+  .ms-3{
+    margin-left: unset !important;
+  }
+  section{
+    padding: 35px 15px;
+  }
+  .banner {
+    min-height: 65vh;
+  }
+  .banner-text {
+    padding: 45px 40px 0px;
+    top: unset;
+    left: unset;
+    width: 100%;
+  }
+  .banner-text h1 {
+    font-size: 37px !important;
+  }
+  .banner-text h1::before {
+    top: 80%;
+    left: 8%;
+    width: 50px;
+  }
+  .banner-text p {
+    font-size: 16px;
+    margin: 40px 0px 0px;
+  }
 
+  /* BIO */
+  section.bio{
+    padding: 25px 15px;
+  }
+  .bio .container-img {
+    height: 250px;
+  }
+  .bio .primary-img {
+    width: 180px;
+    height: 180px;
+  }
+  .bio .text {
+    left: 25px;
+  }
+  .bio .col-md-6 {
+    width: 93%;
+  }
+  section.bio .row{
+    flex-direction: column-reverse;
+  }
+
+  .bio .text{
+    margin-right: unset;
+  }
+
+  .bio .container-text {
+    margin-top: 5px;
+    height: 175px;
+  }
+  
+  .bio .text .salam {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .bio .text .intro {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px !important;
+  }
+  .bio .text .personal-info {
+    margin-top: 10px;
+    justify-content: left;
+  }
+  .bio #name {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  .bio #job{
+    font-size: 14px;
+  }
+
+  .daftar .underline {
+    font-size: 14px !important;
+  }
+  .title, .daftar {
+    padding: 10px 80px;
+  }
+  
+}
 
 /* IPHONE 4 */
 @media screen and (min-width: 320px) and (max-width: 360px){
@@ -832,19 +928,10 @@ fieldset {
   .bio .col-md-6 {
     width: 100%;
   }
-  section.bio .row{
-    flex-direction: column-reverse;
-  }
-
-  .bio .text{
-    margin-right: unset;
-  }
-
   .bio .container-text {
     margin-top: 5px;
     height: 240px;
   }
-  
   .bio .text .salam {
     font-size: 15px;
     margin-bottom: 5px;
