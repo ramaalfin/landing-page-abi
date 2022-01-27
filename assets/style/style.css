@@ -240,9 +240,7 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgb(50 50 93 / 40%) 25px 25px 60px -25px;
 }
 
 .bio .container-text {
@@ -385,9 +383,6 @@ section.quote{
 	font-size: .9em;
   font-style: italic;
 }
-
-
-
 
 /* Tentang Kami */
 section.about{
@@ -768,224 +763,264 @@ fieldset {
   color: #7e7e7e;
 }
 
-
-/* RESPONSIVE */
-
-
-
 /* TABLET */
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px){ 
   section {
-    padding: 45px 70px;
+    padding: 50px 45px;
   }
-  h4{
-    font-size: 1.5rem !important;
+  h4 {
+    font-size: 1.4rem !important;
   }
-  /* BANNER */
-  .banner-text {
-    width: 75%;
-    top: 22%;
-    left: 8%;
+  .mb-2, .mb-3, .mb-4, .mb-5{
+    margin-bottom: unset !important;
   }
-  .banner-img {
-    min-height: 50vh;
-  }
-  .banner-text h1 {
-    font-size: 35px !important;
-  }
-  .banner-text h1::before {
-    bottom: 70px;
-    height: 4px;
-  }
-
-  .title {
-    padding: 20px 35px;
-  }
-
-  /* BIO */
-
-  .bio .row{
-    flex-direction: column-reverse;
-  }
-  .bio .col-md-6 {
-    width: 80%;
-  }
-  .bio .primary-img {
-    width: 320px;
-    height: 320px;
-  }
-  .bio .container-text {
-    margin-top: 30px;
-    height: 200px;
-  }
-  .bio .text {
-    margin-right: 0px;
-  }
-
-  .bio .text .mt-4 {
-    margin-top: 1rem !important;
-  }
-  .bio .text .intro {
-    font-size: 20px;
-  }
-  .bio .personal-info {
-    margin-top: 0px;
-  }
-  .bio #name {
-    font-size: 20px;
-    margin-right: 8px;
-  }
-  .bio #job {
-    font-size: 20px;
-  }
-  
-  /* IMPIAN DAN BUKAN IMPIAN */
-  .impian h2, .bukan-impian h2 {
-    font-size: 1.25rem !important;
-  }
-  .impian p, .bukan-impian p {
-    font-size: 20px;
-  }
-  .impian h3{
-    font-size: 20px;
-  }
-  .impian .img-fluid, .bukan-impian .img-fluid {
-    max-width: 89% !important;
-  }
-
-  .impian .list{
-    margin-top: -65px;
-  }
-
-  .title p {
-    font-size: 20px !important;
-  }
-
-  /* PRODUK */
-  .produk-list h2{
-    font-size: 22px;
-  }
-  .produk-list p {
-    font-size: 12px;
-  }
-  .produk-list .mt-3{
+  .mt-3, .mt-4, .mt-5{
     margin-top: unset !important;
   }
-  .yBoxFrame {
-    max-width: calc(37% - 10px);
+  .ms-3{
+    margin-left: unset !important;
   }
-  .closeYbox {
-    width: 25px;
-    height: 25px;
-  }
-  .closeYbox::after, .closeYbox::before {
-    width: 15px;
-    left: 5px;
-    top: 12px;
-  }
-
-
-  /* DISCLAIMER */
-  .disclaimer .container-text {
-    padding: 25px 30px;
-  }
-  .disclaimer .container-text p {
-    font-size: 14px;
-  }
-
-  /* PROMOSI */
-  .promosi li, .promosi p {
-    font-size: 14px;
-  }
-  .promosi .desc-title {
-    font-size: 14px;
-  }
-  .promosi .container-text {
-    padding: 20px;
-  }
-  .fa-ul {
-    margin-left: 0.5em;
-  }
-
-  /* ABOUT */
-  .about span {
-    font-size: 12px;
-  }
-
-  .mfp-image-holder .mfp-content {
-    max-width: 40%;
-  }
-
-  /* FAQ */
-  .accordion-button {
-    font-size: 14px;
-  }
-  .accordion-body {
-    font-size: 14px;
-  }
-
-  /* FOOTER */
-  footer p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 414px){
+  
   .banner-text {
-    width: 80%;
-  }
+    left: 0%;
+    top: 18%;
+    width: 100%;
+    padding: 0px 70px;
 }
-
-/* ipon 6 */
-@media screen and (max-width: 375px){
   .banner-img {
     min-height: 55vh;
   }
-  .banner-text {
-    width: 95%;
-    left: 3%;
-    top: 16%;
-  }
   .banner-text h1 {
-    font-size: 28px !important;
-  } 
+    font-size: 40px !important;
+  }
+  .banner-text h1::before {
+    left: 9%;
+    top: 74%;
+    bottom: -25px;
+  }
+  .banner-text p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 40px 0px 0px;
+  }
 
   /* BIO */
-  section.bio {
-    padding: 25px 35px;
+  section.bio{
+    padding: 55px 80px;
+  }
+  section.bio .row{
+    flex-direction: column-reverse;
+  }
+  .bio .text{
+    margin-right: unset;
+  }
+  .bio .col-md-6{
+    width: 90%; 
+  }
+  .bio .primary-img {
+    width: 300px;
+    height: 300px;
+  }
+  .bio .container-img {
+    height: 320px;
+  }
+  .bio .text {
+    left: 30px;
+  }
+  .bio .container-text {
+    height: 200px;
+    margin-top: 45px;
   }
   .bio .text .salam {
-    margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .bio .text .intro {
+    font-size: 18px;
+  }
+  .bio .personal-info {
+    margin-top: 25px;
   }
 
   /* IMPIAN */
-  section.bukan-impian h4 {
-    font-size: 14px !important;
-    line-height: 18px;
+  .impian .list, .bukan-impian .list, .andai .list{
+    font-size: 18px;
+  }
+  .bukan-impian .list, .andai .list{
+    margin-top: 35px;
+  }
+  section.impian .p{
+    margin-top: -50px;
   }
   .impian p, .bukan-impian p, .andai p {
-    line-height: 19px;
-  }
-  .andai .list{
-    margin-top: 15px;
+    margin-left: 10px;
+    line-height: 25px;
   }
 
-  /* PROMOSI */
-  .promosi .text3 {
+  section.bukan-impian h4{
+    margin-bottom: 40px;
+  }
+
+  .title{
+    padding: 20px 50px;
+  }
+
+  /* QUOTE */
+  section.quote {
+    padding: 35px 0px;
+    min-height: 45vh;
+  }
+  .title, .daftar {
+    padding: 20px 50px;
+  }
+  .single-item {
+    width: 80%;
+    margin: 25px auto;
+  }
+  .bubble blockquote {
+    margin: 0px 10px 10px;
+    padding: 50px;
+    font-size: 19px;
+  }
+  .bubble blockquote:before, .bubble blockquote:after {
+    font-size: 70px;
+  }
+  .bubble .cite {
+    font-size: 1.3em;
+  }
+
+  /* PRODUK */
+  .yBoxFrame {
+    max-width: calc(50% - 10px);
+    background: white;
+  }
+
+  /* CARA */
+  .cara .main-bg {
+    max-width: 85%;
+  }
+  .cara .list {
+    padding: 25px;
+    padding-left: 5px;
+  }
+  .cara ol{
+    margin: 0;
+  }
+  .cara .list li{
+    line-height: 24px;
+    margin-left: 6px;
+  }
+
+  .cara .download{
+    margin-top: 40px;
+  }
+  .cara .download button {
+    margin: 25px auto;
+  }
+  .cara .download .note{
+    font-size: 15px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer .title-text {
+    margin-bottom: 30px;
+  }
+  .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
+    max-width: 80%;
+  }
+  .container-text {
+    padding: 25px 30px;
+  }
+  .promosi .text1 {
+    margin-top: 55px;
+    font-size: 20px;
+  }
+  .promosi li {
+    line-height: 36px;
+    font-size: 18px;
+  }
+  .promosi .text2 {
     margin-top: 20px;
-    margin-bottom: 5px;
+  }
+  .promosi .text3 {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  .promosi .main-bg2{
+    padding: 0px;
   }
 
-  .title p {
-    line-height: 19px;
+  /* ABOUT */
+  section.about {
+    padding: 50px 40px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card .card-body .items-about {
+    overflow: scroll;
+    white-space: nowrap;
+    flex-flow: row;
+  }
+  .card .card-body .items-about .items-menu a {
+    padding: 10px 20px;
+  }
+
+  /* FAQ */
+  .faq .accordion {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .accordion-body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* footer */
+  .footer-logo img {
+    max-width: 170px;
+  }
+  .footer-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .footer-widget-heading h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .footer-widget-heading h3::before {
+    bottom: -14px;
+    width: 40px;
+  }
+  .footer-section h6{
+    font-size: 1.1rem;
+  }
+  .footer-content p {
+    font-size: 16px;
+  }
+  .footer-social-icon a {
+    font-size: 27px;
+    margin-right: 5px;
+  }
+  .footer-social-icon i {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+  .footer-widget .email-form{
+    margin: 10px 0px;
+  }
+  .footer-widget .email-form input{
+    font-size: 14px;
+  }
+  #contact button {
+    font-size: 14px;
   }
 }
 
-
 /* IPHONE 4 */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+@media screen and (max-device-width: 320px){
   h4 {
     font-size: .9rem !important;
   }
@@ -1030,9 +1065,7 @@ fieldset {
   }
 
   /* BIO */
-  section.bio .row{
-    flex-direction: column-reverse;
-  }
+  
   section.bio{
     padding: 25px 15px;
   }
@@ -1048,9 +1081,7 @@ fieldset {
     margin-top: 5px;
     height: 240px;
   }
-  .bio .text{
-    margin-right: unset;
-  }
+  
   .bio .text .salam {
     font-size: 15px;
     margin-bottom: 5px;
@@ -1276,11 +1307,6 @@ fieldset {
     max-width: 85%;
     margin: 0px auto;
   }
-  .card .card-body .items-about {
-    overflow: scroll;
-    white-space: nowrap;
-    flex-flow: row;
-  }
   .card .tab-content {
     padding: 0px 16px;
   }
@@ -1295,14 +1321,13 @@ fieldset {
   section.faq h3 {
     font-size: calc(.9rem + .6vw);
   }
-  .faq .accordion {
-    max-width: 100%;
-    margin-top: 10px;
-  }
   .accordion-button {
     font-size: 14px;
     line-height: 20px;
     padding: 1rem .5rem;
+  }
+  .faq .accordion {
+    margin-top: 10px;
   }
   .accordion-button::after {
     width: 1rem;
@@ -1311,7 +1336,6 @@ fieldset {
   }
   .accordion-body {
     font-size: 14px;
-    line-height: 20px;
   }
   .accordion-body {
     padding: 0.6rem 1rem;
@@ -1361,3 +1385,4 @@ fieldset {
     font-size: 14px;
   }
 }
+
