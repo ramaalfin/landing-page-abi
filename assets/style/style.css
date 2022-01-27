@@ -953,7 +953,7 @@ fieldset {
     max-height: calc(65vh - 90px);
   }
   .yBoxFrame {
-    max-width: calc(70% - 10px);
+    max-width: calc(80% - 10px);
   }
 
   /* CARA */
