@@ -766,7 +766,7 @@ fieldset {
 
 /* TABLET */
 
-@media only screen and (min-width: 361px) and (max-width: 480px){
+@media (max-width: 480px){
   .banner-text {
     top: 14%;
     left: 12%;
