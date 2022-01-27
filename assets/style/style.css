@@ -763,9 +763,10 @@ fieldset {
   color: #7e7e7e;
 }
 
+
 /* TABLET */
 
-@media screen and (max-device-width: 767px){ 
+@media (max-width: 768px){ 
   section {
     padding: 50px 45px;
   }
@@ -1019,32 +1020,11 @@ fieldset {
   }
 }
 
-@media screen and (max-device-width: 479px){
-  .banner-text {
-    left: 3%;
-    top: 11%;
-    padding: 0px 40px;
-  }
-  .banner-text h1 {
-    font-size: 33px !important;
-  }
-  .banner-text h1::before {
-    left: 8%;
-    top: 75%;
-  }
-  .banner-text p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .banner-img {
-    min-height: 60vh;
-  }
-}
 
 /* IPHONE 4 */
-@media screen and (max-device-width: 359px){
+@media (max-width: 359px){
   h4 {
-    font-size: .9rem !important;
+    font-size: 1rem !important;
   }
   .mb-2, .mb-3, .mb-4, .mb-5{
     margin-bottom: unset !important;
@@ -1074,7 +1054,7 @@ fieldset {
     font-size: 25px !important;
   }
   .banner-text h1::before {
-    left: 7%;
+    left: 8%;
     top: 70%;
     bottom: -25px;
     height: 3px;
@@ -1097,6 +1077,12 @@ fieldset {
   .bio .primary-img {
     width: 180px;
     height: 180px;
+  }
+  .bio .text {
+    left: 25px;
+  }
+  .bio .col-md-6 {
+    width: 100%;
   }
 
   .bio .container-text {
@@ -1202,7 +1188,7 @@ fieldset {
     margin: 0px auto;
   }
   .produk-list p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
   } 
   .closeYbox::after, .closeYbox::before {
@@ -1235,10 +1221,10 @@ fieldset {
     max-width: 100%;
   }
   .cara .list ol{
-    padding-left: 1rem;
+    padding-left: .5rem;
   }
   .cara .list li {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 35px;
   }
   .cara .list li p{
@@ -1251,12 +1237,10 @@ fieldset {
     margin-top: 25px;
     margin-bottom: 15px;
   }
-  .cara .download button{
-    font-size: 14px;
-  }
   .cara .download button {
+    font-size: 12px;
     padding: 3px 14px;
-
+    margin: 0px auto;
   }
   .cara .download .note{
     margin-top: 15px;
@@ -1280,21 +1264,23 @@ fieldset {
 
   .promosi .text1 {
     margin-top: 45px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .promosi .main-bg1, .promosi .main-bg2 {
     max-width: 100%;
     margin: 25px 0px;
   } 
   .promosi .container-text {
-    padding: 20px 5px;
+    padding: 20px;
   }
   .promosi li {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: unset;
   }
   .promosi .text2 {
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .promosi p{
     font-size: 14px;
@@ -1305,7 +1291,7 @@ fieldset {
     margin-bottom: 10px;
   }
   .promosi .desc-title {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   /* ABOUT */
@@ -1407,3 +1393,4 @@ fieldset {
     font-size: 14px;
   }
 }
+
