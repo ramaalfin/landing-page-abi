@@ -1020,7 +1020,7 @@ fieldset {
 }
 
 /* IPHONE 4 */
-@media screen and (max-device-width: 320px){
+@media screen and (min-device-width: 320px){
   h4 {
     font-size: .9rem !important;
   }
