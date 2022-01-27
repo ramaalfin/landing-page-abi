@@ -944,13 +944,10 @@ fieldset {
     height: 22px;
   } 
   .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
-    height: calc(65vh - 80px);
+    height: calc(55vh - 80px);
   }
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(65vh - 80px);
-  }
-  .yBoxFrame.yBoxImgWrap img.yBoxImg, .yBoxIframe {
-    max-height: calc(65vh - 90px);
+    height: calc(55vh - 80px);
   }
   .yBoxFrame {
     max-width: calc(80% - 10px);
