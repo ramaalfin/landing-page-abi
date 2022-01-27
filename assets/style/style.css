@@ -801,6 +801,7 @@ fieldset {
     font-size: 25px !important;
   }
   .banner-text h1::before {
+    content: unset;
     left: 8%;
     top: 70%;
     bottom: -25px;
