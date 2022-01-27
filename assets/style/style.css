@@ -949,6 +949,9 @@ fieldset {
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
     height: calc(65vh - 80px);
   }
+  .yBoxFrame.yBoxImgWrap img.yBoxImg, .yBoxIframe {
+    max-height: calc(65vh - 90px);
+  }
   .yBoxFrame {
     max-width: calc(70% - 10px);
   }
