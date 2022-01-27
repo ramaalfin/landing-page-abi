@@ -888,9 +888,6 @@ fieldset {
     margin-bottom: 20px;
     line-height: 20px;
   }
-  .impian .list, .bukan-impian .list, .andai .list{
-    margin-top: 20px;
-  }
 
   .title {
     padding: 20px;
@@ -930,7 +927,7 @@ fieldset {
 
   /* PRODUK */
   .produk {
-    max-width: 55%;
+    max-width: 60%;
     margin: 0px auto;
   }
   .produk-list p {
@@ -953,7 +950,7 @@ fieldset {
     height: calc(65vh - 80px);
   }
   .yBoxFrame {
-    max-width: calc(65% - 10px);
+    max-width: calc(70% - 10px);
   }
 
   /* CARA */
