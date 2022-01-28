@@ -765,7 +765,7 @@ fieldset {
 
 
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   h4 {
     font-size: 1.5rem !important;
   }
@@ -926,14 +926,14 @@ fieldset {
     height: 30px;
   }
   .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
-    height: calc(66vh - 80px);
+    height: calc(70vh - 80px);
   }
   .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(66vh - 80px);
+    height: calc(70vh - 80px);
     overflow: hidden;
   }
   .yBoxFrame {
-    max-width: calc(66% - 10px);
+    max-width: calc(56% - 10px);
   }
 
   /* CARA */
