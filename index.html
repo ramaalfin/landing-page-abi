@@ -989,8 +989,13 @@
                               <input type="hidden" name="_captcha" value="false">
                     
                               <input type="hidden" name="_next" value="https://lp-abi.netlify.app/success.html">
-                              <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                              <textarea placeholder="Type your Message Here...." tabindex="5" required class="form-control" id="comments" name="comments"></textarea>
+
+                              <input type="hidden" name="_subject" value="New submission!">
+
+                              <input type="hidden" name="_template" value="table">
+
+                              <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+                              <textarea placeholder="Type your Message Here...." tabindex="5" required class="form-control" name="message"></textarea>
                               <button name="submit" type="submit">Submit</button>
                             </form>
                           </div>
