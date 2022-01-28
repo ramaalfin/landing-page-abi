@@ -980,7 +980,15 @@
                           </div>
                           <p class="mb-2">Untuk informasi lebih lanjut silahkan mengisi data berikut.</p>
                           <div class="email-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="https://formsubmit.co/ramaalfin7@gmail.com" method="POST">
+                              <!-- Honeypot -->
+                              <input type="text" name="_honey" style="display: none;">
+                    
+                              <!-- Disable Captcha -->
+                              <input type="hidden" name="_captcha" value="false">
+                    
+                              <input type="hidden" name="_next" value="https://lp-abi.netlify.app/success.html">
+                              
                               <fieldset>
                                 <input placeholder="Your Email Address" type="email" tabindex="2" required>
                               </fieldset>
@@ -988,7 +996,7 @@
                                 <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
                               </fieldset>
                               <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                <button name="submit" type="submit">Submit</button>
                               </fieldset>
                             </form>
                           </div>
