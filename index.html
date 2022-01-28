@@ -981,7 +981,7 @@
                           <p class="mb-2">Untuk informasi lebih lanjut silahkan mengisi data berikut.</p>
 
                           <div class="email-form">
-                            <form action="https://formsubmit.co/ramaalfin7@gmail.com" method="POST">
+                            <form id="contact" action="https://formsubmit.co/ramaalfin7@gmail.com" method="POST">
                               <!-- Honeypot -->
                               <input type="text" name="_honey" style="display: none;">
                     
@@ -994,9 +994,15 @@
 
                               <input type="hidden" name="_template" value="table">
 
-                              <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
-                              <textarea placeholder="Type your Message Here...." tabindex="5" required class="form-control" name="message"></textarea>
-                              <button name="submit" type="submit">Submit</button>
+                              <fieldset>
+                                <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+                              </fieldset>
+                              <fieldset>
+                                <textarea placeholder="Type your Message Here...." tabindex="5" required ></textarea>
+                              </fieldset>
+                              <fieldset>
+                                <button name="submit" type="submit">Submit</button>
+                              </fieldset>
                             </form>
                           </div>
 

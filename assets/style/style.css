@@ -739,10 +739,6 @@ fieldset {
 	border:1px solid #AAA;
 }
 
-#contact input[type="text"]::after, #contact input[type="email"]::after, #contact textarea::after{
-  background-co:#e7f1ff;
-
-}
 
 #contact textarea {
 	height:100px;
