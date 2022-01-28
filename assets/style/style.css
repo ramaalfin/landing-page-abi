@@ -724,17 +724,24 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
 	width:100%;
 	border:1px solid #CCC;
-	background:#151414;
 	margin:0 0 5px;
+  background: #151414;
 	padding:10px;
+  font-weight: 500;
+  color: #e7f1ff;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	transition:border-color 0.3s ease-in-out;
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
+  transition:border-color 0.3s ease-in-out;
 	border:1px solid #AAA;
+}
+
+#contact input[type="text"]::after, #contact input[type="email"]::after, #contact textarea::after{
+  background-co:#e7f1ff;
+
 }
 
 #contact textarea {
