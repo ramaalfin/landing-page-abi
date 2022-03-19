@@ -1142,6 +1142,11 @@ fieldset {
 
   .kerja .content {
     padding: 10px;
+    max-width: fit-content;
+  }
+  .kerja .container .row{
+    width: inherit;
+    --bs-gutter-x: 0;
   }
   .kerja .content p {
     font-size: 14px;
@@ -1166,6 +1171,53 @@ fieldset {
   }
   .layanan .list {
     width: 70%;
+  }
+
+
+  /* DOWNLOAD */
+
+  .download .content p {
+    font-size: 17px;
+  }
+  .download .content {
+    max-width: 90%;
+  }
+
+
+  /* QUESTION */
+
+  .question {
+    padding: 50px 0px 10px;
+  }
+  .question .content {
+    font-size: 18px;
+    width: 100%;
+  }
+  .question .list {
+    width: 100%;
+  }
+  .question .list ul li {
+    font-size: 17px;
+  }
+
+
+  /* LAYANAN */
+
+  .layanan {
+    padding: 10px;
+  }
+  .layanan .content {
+    font-size: 17px;
+    width: 100%;
+  }
+  .layanan .list {
+    width: 100%;
+  }
+  .layanan .list ul li {
+    font-size: 17px;
+  }
+  .layanan .list {
+    margin: 20px auto 30px;
   }
 
   /* PRODUK */
@@ -1429,104 +1481,74 @@ fieldset {
   section.bio{
     padding: 25px 15px;
   }
-  .bio .container-img {
-    height: 250px;
+
+  .bio .container .img {
+    min-height: 60vh;
   }
-  .bio .primary-img {
-    width: 180px;
-    height: 180px;
+  .bio .container .img .square1::before {
+    right: 3%;
   }
-  .bio .text {
-    left: 25px;
+  .bio .container .img .square1::after {
+    right: 13.2%;
   }
-  .bio .col-md-6 {
-    width: 95%;
+
+  .bio .container .img .square2::before {
+    right: 21.2%;
   }
+  .bio .container .img .square2::after {
+    right: 31.5%;
+  }
+
+  .bio .container .img .square3::before {
+    right: 39.5%;
+  }
+  .bio .container .img .square3::after {
+    right: 49.8%;
+  }
+
   
-
-  .bio .container-text {
-    margin-top: 5px;
-    height: 175px;
-  }
-  
-  .bio .text .salam {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  .bio .text .intro {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 5px !important;
-  }
-  .bio .text .personal-info {
-    margin-top: 10px;
-    justify-content: left;
-  }
-  .bio #name {
-    font-size: 14px;
-    margin-right: 6px;
-  }
-  .bio #job{
-    font-size: 14px;
-  }
-
-  .daftar .underline {
-    font-size: 14px !important;
-  }
-  .title, .daftar {
-    padding: 10px 80px;
-  }
-
   /* IMPIAN */
-  .impian .img-fluid, .bukan-impian .img-fluid, .andai .img-fluid {
-    max-width: 100% !important;
-  }
-  section.impian h4{
-    font-size: .9rem !important;
-  }
-  section.impian .p{
-    margin-top: -40px;
-  }
-  .impian .list, .bukan-impian .list, .andai .list{
-    font-size: 14px;
-  }
   .impian p, .bukan-impian p, .andai p {
     margin-left: 5px;
     line-height: 20px;
   }
 
-  section.bukan-impian {
-    padding-top: 0px !important;
-  }
-  section.bukan-impian h4{
-    font-size: 14px !important;
-    margin-bottom: 20px;
-    line-height: 20px;
+
+  /* BUKAN IMPIAN */
+
+  .bukan-impian .cards {
+    padding: 30px 25px;
   }
 
-  .title {
-    padding: 20px;
+
+  /* ANDAI */
+
+  .andai .list {
+    padding: 20px 5px;
+    margin: 30px 0px;
+    max-width: 100%;
   }
-  .title p{
-    font-size: 14px !important;
-  }
+
+
+  /* QUOTES */
+
+  .single-item {
+    width: 100%;
+    left: 0%;
+  } 
 
   /* QUOTES */
   section.quote {
     padding: 10px;
-    min-height: 35vh;
+    min-height: 30vh;
   }
   section.quote h4{
     margin-top: 20px;
   }
-  .single-item {
-    width: 100%;
-    margin: 20px auto;
-  }
   .bubble blockquote {
-    margin: 0px 10px 10px;
+    margin: 0px 15px 10px;
     padding: 30px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
   }
   .bubble blockquote:before, .bubble blockquote:after {
@@ -1540,8 +1562,36 @@ fieldset {
     right: 5px;
   }
 
+
+  /* BENEFIT */
+
+  .benefit .cards {
+    padding: 20px 10px;
+  }
+  .benefit .cards .d-flex{
+    display: grid !important;
+  }
+  .benefit ul li {
+    margin-bottom: 3px;
+  }
+
+  .benefit .choose .sub-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .benefit .choose .line {
+    width: 85%;
+  }
+
+
+  /* CARA KERJA */
+
+  .kerja .title {
+    padding: 15px 20px;
+  }
+
   /* PRODUK */
-  .produk {
+  /* .produk {
     max-width: 60%;
     margin: 0px auto;
   }
@@ -1568,46 +1618,10 @@ fieldset {
     max-width: calc(80% - 10px);
   }
 
-  /* CARA */
-  .cara .list {
-    padding: 15px 10px;
-  }
-  .cara .title-text {
-    margin-bottom: 18px;
-  }
-  .cara .main-bg{
-    max-width: 90%;
-  }
-  .cara .list ol{
-    padding-left: .5rem;
-  }
-  .cara .list li {
-    font-size: 14px;
-    line-height: 35px;
-  }
-  .cara .list li p{
-    line-height: 20px;
-    margin-left: 5px;
-  }
-  .cara .download p {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-  }
-  .cara .download button {
-    font-size: 14px;
-    padding: 5px 20px;
-    margin: 0px auto;
-  }
-  .cara .download .note{
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 11px;
-  }
+  
 
   /* DISCLAIMER */
-  .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
+  /* .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
     max-width: 90%;
   }
   .disclaimer .title-text {
@@ -1651,7 +1665,7 @@ fieldset {
   }
   .promosi .desc-title {
     font-size: 1Zpx;
-  }
+  } */
 
   /* ABOUT */
   section.about {
@@ -1687,7 +1701,7 @@ fieldset {
   }
 
   /* FAQ */
-  section.faq{
+  /* section.faq{
     padding: 40px 15px;
   }
   .faq .accordion {
@@ -1715,7 +1729,7 @@ fieldset {
   }
   .accordion-body {
     padding: 0.6rem 1rem;
-  }
+  } */
 
   /* FOOTER */
   .footer-logo img {
