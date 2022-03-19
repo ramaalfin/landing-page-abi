@@ -1016,6 +1016,9 @@ fieldset {
   section.bio .row{
     flex-direction: column-reverse;
   }
+  .bio .container .img {
+    border-radius: 0px 0px 0px 0px;
+  }
   .bio .text{
     margin-right: unset;
   }
@@ -1483,13 +1486,13 @@ fieldset {
   }
 
   .bio .container .img {
-    min-height: 60vh;
+    min-height: fit-content;
   }
   .bio .container .img .square1::before {
     right: 3%;
   }
   .bio .container .img .square1::after {
-    right: 13.2%;
+    right: 15%;
   }
 
   .bio .container .img .square2::before {
