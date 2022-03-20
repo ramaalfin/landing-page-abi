@@ -1601,7 +1601,6 @@ fieldset {
   }
   .kerja .container .row {
     justify-content: center;
-    column-gap: 10px;
   }
   .kerja .content {
     padding: 10px 20px;
