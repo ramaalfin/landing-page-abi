@@ -1486,7 +1486,8 @@ fieldset {
   }
 
   .bio .container .img {
-    min-height: auto;
+    min-height: fit-content;
+    padding-bottom: 50px;
   }
   .bio .container .img .square1::before {
     right: 4%;
