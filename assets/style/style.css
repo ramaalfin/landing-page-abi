@@ -1494,7 +1494,7 @@ fieldset {
     width: 175px !important;
     margin-top: 5%;
   }
-  
+
   .bio .container .img .square1::before {
     right: 4%;
   }
@@ -1601,7 +1601,7 @@ fieldset {
   }
   .kerja .container .row {
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 10px;
   }
   .kerja .content {
     padding: 10px 20px;
