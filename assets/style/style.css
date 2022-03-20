@@ -1503,10 +1503,10 @@ fieldset {
   }
 
   .bio .container .img .square3::before {
-    right: 42%;
+    right: 42.5%;
   }
   .bio .container .img .square3::after {
-    right: 54%;
+    right: 54.5%;
   }
 
   
