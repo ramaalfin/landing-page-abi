@@ -1489,10 +1489,10 @@ fieldset {
     min-height: fit-content;
   }
   .bio .container .img .square1::before {
-    right: 3%;
+    right: 4%;
   }
   .bio .container .img .square1::after {
-    right: 15%;
+    right: 16%;
   }
 
   .bio .container .img .square2::before {
@@ -1591,6 +1591,13 @@ fieldset {
 
   .kerja .title {
     padding: 15px 20px;
+  }
+  .kerja .container .row {
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .kerja .content {
+    padding: 10px 20px;
   }
 
   /* PRODUK */
