@@ -1489,6 +1489,12 @@ fieldset {
     min-height: fit-content;
     padding-bottom: 50px;
   }
+
+  .bio .cards .img img {
+    width: 175px !important;
+    margin-top: 5%;
+  }
+  
   .bio .container .img .square1::before {
     right: 4%;
   }
