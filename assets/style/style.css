@@ -1672,6 +1672,11 @@ fieldset {
     font-size: 14px;
   }
 
+  /* ANDAI */
+  .andai h4 {
+    font-size: 1.2rem !important;
+  }
+
   /* SURVEY */
 
   .survey {
@@ -1711,7 +1716,7 @@ fieldset {
   /* DEFINISI */
 
   .definisi .text .isi {
-    font-size: 14px;
+    font-size: 13px;
   } 
 
   /* BENEFIT */
@@ -1720,13 +1725,13 @@ fieldset {
     font-size: 14px;
   }
   .benefit .choose .line {
-    width: 94%;
+    width: 93%;
   }
 
   /* CARA KERJA */
   
-  .kerja .title {
-    padding: 15px 10px;
+  .kerja .title h3{
+    font-size: calc(1.2rem + .6vw);
   }
   .kerja .container{
     padding: 0px;
