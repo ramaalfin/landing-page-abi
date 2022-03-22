@@ -1731,6 +1731,7 @@ fieldset {
   /* CARA KERJA */
   .kerja .title{
     width: 100%;
+    padding: 15px 0px;
   }
   .kerja .title h3{
     font-size: calc(1.1rem + .6vw);
