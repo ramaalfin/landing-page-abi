@@ -1729,9 +1729,12 @@ fieldset {
   }
 
   /* CARA KERJA */
-  
+  .kerja .title{
+    width: 100%;
+  }
   .kerja .title h3{
-    font-size: calc(1.2rem + .6vw);
+    font-size: calc(1.1rem + .6vw);
+    text-align: center;
   }
   .kerja .container{
     padding: 0px;
