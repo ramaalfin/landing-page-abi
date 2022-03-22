@@ -1653,8 +1653,12 @@ fieldset {
 
   /* IMPIAN */
 
+  .impian p, .bukan-impian p, .andai p {
+    margin-left: 5px;
+    line-height: unset;
+  }
   .impian .list, .bukan-impian .list, .andai .list {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   /* BUKAN IMPIAN */
@@ -1666,7 +1670,7 @@ fieldset {
   /* SURVEY */
 
   .survey {
-    font-size: 14px;
+    font-size: 14px !important;
     padding: 50px 15px;
   }
   
@@ -1699,6 +1703,21 @@ fieldset {
     right: 5px;
   }
 
+  /* DEFINISI */
+
+  .definisi .text .isi {
+    font-size: 14px;
+  } 
+
+  /* BENEFIT */
+
+  .benefit ul li {
+    font-size: 14px;
+  }
+  .benefit .choose .line {
+    width: 94%;
+  }
+
   /* CARA KERJA */
   
   .kerja .title {
@@ -1706,6 +1725,9 @@ fieldset {
   }
   .kerja .container{
     padding: 0px;
+  }
+  .kerja .content p {
+    font-size: 12px;
   }
 
   /* DOWNLOAD */
@@ -1716,16 +1738,19 @@ fieldset {
   .download .content {
     max-width: 100%;
   }
+  .download .content p {
+    font-size: 14px;
+  }
 
   /* QUESTION */
   .question .list ul li {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* LATANAN */
 
   .layanan .list ul li {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   /* ABOUT */
