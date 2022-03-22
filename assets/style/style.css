@@ -1658,7 +1658,11 @@ fieldset {
     margin-left: 5px;
     line-height: unset;
   }
-  .impian .list, .bukan-impian .list, .andai .list {
+  .impian .list{
+    font-size: 14px;
+  }
+  
+  .bukan-impian .list, .andai .list {
     font-size: 13px;
   }
 
