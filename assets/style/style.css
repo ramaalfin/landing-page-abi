@@ -220,6 +220,9 @@ img {
   margin-top: 10%;
   align-items: center;
 }
+.bio .container .text{
+  padding: 0px 35px;
+}
 .bio .container .text p{
   margin: 15px 0px 35px;
   font-size: 18px;
@@ -1019,8 +1022,8 @@ fieldset {
   .bio .container .img {
     border-radius: 0px 0px 0px 0px;
   }
-  .bio .text{
-    margin-right: unset;
+  .bio .container .text {
+    padding: 50px 35px;
   }
   .bio .col-md-6 {
     width: 100%;
@@ -1116,6 +1119,15 @@ fieldset {
     font-size: 1.2em;
   }
 
+  
+  /* DEFIINISI */
+  
+  .definisi .text .title {
+    margin-bottom: 15px;
+  }
+  .definisi .text .isi {
+    font-size: 17px;
+  }
 
   /* BENEFIT */
   
@@ -1223,120 +1235,6 @@ fieldset {
     margin: 20px auto 30px;
   }
 
-  /* PRODUK */
-  /* .produk {
-    max-width: 100%;
-    margin: 0px auto;
-  }
-  .produk-list p {
-    font-size: 16px;
-    line-height: 17px;
-  } 
-  .closeYbox::after, .closeYbox::before {
-    width: 20px;
-    left: 5.5px;
-    top: 14px;
-  }
-  .closeYbox {
-    width: 30px;
-    height: 30px;
-  }
-  .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
-    height: calc(70vh - 80px);
-  }
-  .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(70vh - 80px);
-    overflow: hidden;
-  }
-  .yBoxFrame {
-    max-width: calc(56% - 10px);
-  } */
-
-  /* CARA */
-  /* .cara .list {
-    padding: 25px;
-  }
-  .cara .title-text {
-    margin-bottom: 18px;
-  }
-  .cara .main-bg{
-    max-width: 85%;
-  }
-  .cara .list ol{
-    padding-left: 1rem;
-  }
-  .cara .list li {
-    font-size: 18px;
-    line-height: 40px;
-  }
-  .cara .list li p {
-    line-height: 26px;
-    margin-left: 5px;
-  }
-  .cara .download p {
-    font-size: 18px;
-    line-height: 20px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  .cara .download button {
-    font-size: 16px;
-    padding: 12px 20px;
-    margin: 0px auto;
-  }
-  .cara .download .note{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 14px;
-  } */
-
-  /* DISCLAIMER */
-  /* .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 80%;
-  }
-  .disclaimer .title-text {
-    margin-bottom: 20px;
-  }
-  .disclaimer .container-text {
-    padding: 25px 30px;
-  }
-  .disclaimer .container-text p {
-    font-size: 18px;
-  }
-
-  .promosi .text1 {
-    margin-top: 60px;
-    font-size: 18px;
-  }
-  .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 88%;
-    margin: 25px 0px;
-    padding: 0px;
-  } 
-  .promosi .container-text {
-    padding: 25px 30px;
-  }
-  .promosi li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: unset;
-  }
-  .promosi .text2 {
-    margin-top: 15px;
-    font-size: 1Zpx;
-  }
-  .promosi p{
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .promosi .text3 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-  }
-  .promosi .desc-title {
-    font-size: 1Zpx;
-  } */
-
   /* ABOUT */
   section.about {
     padding: 35px 5px;
@@ -1370,36 +1268,6 @@ fieldset {
     max-width: 65%;
   }
 
-  /* FAQ */
-  /* section.faq{
-    padding: 60px 15px;
-  }
-  .faq .accordion {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  section.faq h3 {
-    font-size: calc(1.4rem + .6vw);
-  }
-  .accordion-button {
-    font-size: 18px;
-    line-height: 20px;
-    padding: 1rem .5rem;
-  }
-  .faq .accordion {
-    margin-top: 10px;
-  }
-  .accordion-button::after {
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
-  }
-  .accordion-body {
-    font-size: 18px;
-  }
-  .accordion-body {
-    padding: 0.6rem 1rem;
-  } */
 
   /* FOOTER */
   .footer-logo img {
@@ -1490,6 +1358,10 @@ fieldset {
     padding-bottom: 50px;
   }
 
+  .bio .container .text {
+    padding: 40px 20px;
+  }
+
   .bio .cards .img img {
     width: 175px !important;
     margin-top: 5%;
@@ -1518,26 +1390,42 @@ fieldset {
 
   
   /* IMPIAN */
+  .impian .list, .bukan-impian .list, .andai .list {
+    font-size: 16px;
+  }
   .impian p, .bukan-impian p, .andai p {
     margin-left: 5px;
     line-height: 20px;
+  }
+  .impian .list {
+    padding: 20px 15px;
   }
 
 
   /* BUKAN IMPIAN */
 
   .bukan-impian .cards {
-    padding: 30px 25px;
+    padding: 20px 15px;
+  }
+  .bukan-impian .text {
+    font-size: 17px;
+  }
+
+  /* SURVEY */
+
+  .survey{
+    font-size: 16px;
+    padding: 50px 15px;
   }
 
 
   /* ANDAI */
 
   .andai .list {
-    padding: 20px 5px;
-    margin: 30px 0px;
+    padding: 15px 5px;
+    margin: 30px 0px 0px;
     max-width: 100%;
-  }
+}
 
 
   /* QUOTES */
@@ -1550,7 +1438,7 @@ fieldset {
   /* QUOTES */
   section.quote {
     padding: 10px;
-    min-height: 30vh;
+    min-height: 34vh;
   }
   section.quote h4{
     margin-top: 20px;
@@ -1570,6 +1458,13 @@ fieldset {
   }
   .bubble blockquote:after {
     right: 5px;
+  }
+
+
+  /* DEFINISI */
+
+  .definisi .text .isi {
+    font-size: 17px;
   }
 
 
@@ -1606,89 +1501,12 @@ fieldset {
     padding: 10px 20px;
   }
 
-  /* PRODUK */
-  /* .produk {
-    max-width: 60%;
-    margin: 0px auto;
-  }
-  .produk-list p {
-    font-size: 12px;
-    line-height: 17px;
-  } 
-  .closeYbox::after, .closeYbox::before {
-    width: 15px;
-    left: 4px;
-    top: 10px;
-  }
-  .closeYbox {
-    width: 22px;
-    height: 22px;
-  } 
-  .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
-    height: calc(55vh - 80px);
-  }
-  .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(55vh - 80px);
-  }
-  .yBoxFrame {
-    max-width: calc(80% - 10px);
-  }
-
-  
-
-  /* DISCLAIMER */
-  /* .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 90%;
-  }
-  .disclaimer .title-text {
-    margin-bottom: 20px;
-  }
-  .disclaimer .container-text {
-    padding: 15px;
-  }
-  .disclaimer .container-text p {
-    font-size: 14px;
-  }
-
-  .promosi .text1 {
-    margin-top: 45px;
-    font-size: 14px;
-  }
-  .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 100%;
-    margin: 25px 0px;
-    padding: 0px;
-  } 
-  .promosi .container-text {
-    padding: 20px;
-  }
-  .promosi li {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: unset;
-  }
-  .promosi .text2 {
-    margin-top: 15px;
-    font-size: 1Zpx;
-  }
-  .promosi p{
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .promosi .text3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .promosi .desc-title {
-    font-size: 1Zpx;
-  } */
-
   /* ABOUT */
   section.about {
     padding: 35px 5px;
   }
-  .about .items-menu span{
-    font-size: 12px;
+  .about .items-menu span {
+    font-size: 14px;
   }
   .card .card-body {
     padding: 10px 5px;
@@ -1715,37 +1533,6 @@ fieldset {
   .mfp-image-holder .mfp-content {
     max-width: 65%;
   }
-
-  /* FAQ */
-  /* section.faq{
-    padding: 40px 15px;
-  }
-  .faq .accordion {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  section.faq h3 {
-    font-size: calc(.9rem + .6vw);
-  }
-  .accordion-button {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 1rem .5rem;
-  }
-  .faq .accordion {
-    margin-top: 10px;
-  }
-  .accordion-button::after {
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
-  }
-  .accordion-body {
-    font-size: 14px;
-  }
-  .accordion-body {
-    padding: 0.6rem 1rem;
-  } */
 
   /* FOOTER */
   .footer-logo img {
@@ -1795,6 +1582,9 @@ fieldset {
 
 /* IPHONE 4 */
 @media screen and (min-width: 320px) and (max-width: 360px){
+  section{
+    padding: 35px 10px;
+  }
   .banner {
     min-height: 50vh;
   }
@@ -1828,42 +1618,19 @@ fieldset {
   section.bio{
     padding: 25px 15px;
   }
-  .bio .container-img {
-    height: 250px;
-  }
+  .bio .cards .img img {
+    width: 150px !important;
+}
   .bio .primary-img {
     width: 180px;
     height: 180px;
   }
-  .bio .text {
-    left: 25px;
+  .bio .container .text {
+    padding: 30px 10px;
   }
-  .bio .col-md-6 {
-    width: 100%;
-  }
-  .bio .container-text {
-    margin-top: 5px;
-    height: 240px;
-  }
-  .bio .text .salam {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  .bio .text .intro {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 5px !important;
-  }
-  .bio .text .personal-info {
-    margin-top: 10px;
-    justify-content: left;
-  }
-  .bio #name {
-    font-size: 14px;
-    margin-right: 6px;
-  }
-  .bio #job{
-    font-size: 14px;
+  .bio .container .text p {
+    margin: 15px 0px 30px;
+    font-size: 17px;
   }
 
   .daftar {
@@ -1873,44 +1640,11 @@ fieldset {
     font-size: 14px !important;
   }
 
-  /* IMPIAN */
-  .impian .img-fluid, .bukan-impian .img-fluid, .andai .img-fluid {
-    max-width: 100% !important;
-  }
-  section.impian h4{
-    font-size: .9rem !important;
-  }
-  section.impian .p{
-    margin-top: -40px;
-  }
-  .impian p, .bukan-impian p, .andai p {
-    margin-left: 5px;
-    line-height: 20px;
-  }
-
-  section.bukan-impian {
-    padding-top: 0px !important;
-  }
-  section.bukan-impian h4{
-    font-size: 14px !important;
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .impian .list, .bukan-impian .list, .andai .list{
-    margin-top: 20px;
-  }
-
-  .title {
-    padding: 20px;
-  }
-  .title p{
-    font-size: 14px !important;
-  }
-
+  
   /* QUOTES */
   section.quote {
     padding: 10px;
-    min-height: 45vh;
+    min-height: 35vh;
   }
   section.quote h4{
     margin-top: 20px;
@@ -1936,119 +1670,35 @@ fieldset {
     right: 5px;
   }
 
-  /* PRODUK */
-  .produk {
-    max-width: 60%;
-    margin: 0px auto;
-  }
-  .produk-list p {
-    font-size: 12px;
-    line-height: 17px;
-  } 
-  .closeYbox::after, .closeYbox::before {
-    width: 15px;
-    left: 3.5px;
-    top: 10.5px;
-  }
-  .closeYbox {
-    width: 22px;
-    height: 22px;
-  } 
-  .yBoxFrame.yBoxIframeWrap, .yBoxFrame.yBoxImgWrap {
-    height: calc(55vh - 80px);
-  }
-  .yBoxFrame.yBoxIframeWrap .insertYboxAjaxHere, .yBoxFrame.yBoxImgWrap .insertYboxAjaxHere {
-    height: calc(55vh - 80px);
-  }
-  .yBoxFrame {
-    max-width: calc(82% - 10px);
-  }
-
-  /* CARA */
-  .cara .list {
+  /* CARA KERJA */
+  
+  .kerja .title {
     padding: 15px 10px;
   }
-  .cara .title-text {
-    margin-bottom: 18px;
-  }
-  .cara .main-bg{
-    max-width: 100%;
-  }
-  .cara .list ol{
-    padding-left: .5rem;
-  }
-  .cara .list li {
-    font-size: 14px;
-    line-height: 35px;
-  }
-  .cara .list li p{
-    line-height: 20px;
-    margin-left: 5px;
-  }
-  .cara .download p {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-  }
-  .cara .download button {
-    font-size: 12px;
-    padding: 3px 14px;
-    margin: 0px auto;
-  }
-  .cara .download .note{
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 11px;
-  }
-
-  /* DISCLAIMER */
-  .disclaimer .main-bg, .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 90%;
-  }
-  .disclaimer .title-text {
-    margin-bottom: 20px;
-  }
-  .disclaimer .container-text {
-    padding: 15px;
-  }
-  .disclaimer .container-text p {
-    font-size: 14px;
-  }
-
-  .promosi .text1 {
-    margin-top: 45px;
-    font-size: 14px;
-  }
-  .promosi .main-bg1, .promosi .main-bg2 {
-    max-width: 100%;
-    margin: 25px 0px;
+  .kerja .container{
     padding: 0px;
-  } 
-  .promosi .container-text {
-    padding: 20px;
-  }
-  .promosi li {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: unset;
-  }
-  .promosi .text2 {
-    margin-top: 15px;
-    font-size: 1Zpx;
-  }
-  .promosi p{
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .promosi .text3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .promosi .desc-title {
-    font-size: 1Zpx;
   }
 
+  /* DOWNLOAD */
+
+  section.download{
+    padding: 35px 0px;
+  }
+  .download .content {
+    max-width: 100%;
+  }
+
+  /* QUESTION */
+  .question .list ul li {
+    font-size: 16px;
+  }
+
+  /* LATANAN */
+
+  .layanan .list ul li {
+    font-size: 16px;
+  }
+  
   /* ABOUT */
   section.about {
     padding: 35px 5px;
@@ -2082,37 +1732,7 @@ fieldset {
     max-width: 65%;
   }
 
-  /* FAQ */
-  section.faq{
-    padding: 40px 15px;
-  }
-  .faq .accordion {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  section.faq h3 {
-    font-size: calc(.9rem + .6vw);
-  }
-  .accordion-button {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 1rem .5rem;
-  }
-  .faq .accordion {
-    margin-top: 10px;
-  }
-  .accordion-button::after {
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
-  }
-  .accordion-body {
-    font-size: 14px;
-  }
-  .accordion-body {
-    padding: 0.6rem 1rem;
-  }
-
+  
   /* FOOTER */
   .footer-logo img {
     max-width: 130px;
