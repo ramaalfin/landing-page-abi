@@ -1654,13 +1654,13 @@ fieldset {
   /* IMPIAN */
 
   .impian .list, .bukan-impian .list, .andai .list {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   /* BUKAN IMPIAN */
 
   .bukan-impian .text {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   /* SURVEY */
