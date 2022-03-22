@@ -1630,13 +1630,16 @@ fieldset {
   }
   .bio .container .text p {
     margin: 15px 0px 30px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .bio .container .img .square1::before {
     right: 4.3%;
   }
   .bio .container .img .square1::after {
     right: 17.92%;
+  }
+  .bio .container .img .square2::before {
+    right: 25%;
   }
   .bio .container .img .square2::after {
     right: 38.6%;
