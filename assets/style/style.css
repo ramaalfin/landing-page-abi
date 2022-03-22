@@ -1608,7 +1608,7 @@ fieldset {
     width: 50px;
   }
   .banner-text p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 26px 0px 0px;
     line-height: 18px;
   }
@@ -1630,16 +1630,23 @@ fieldset {
   }
   .bio .container .text p {
     margin: 15px 0px 30px;
-    font-size: 17px;
+    font-size: 16px;
   }
-
-  .daftar {
-    padding: 10px 15px;
+  .bio .container .img .square1::before {
+    right: 4.3%;
   }
-  .daftar .underline {
-    font-size: 14px !important;
+  .bio .container .img .square1::after {
+    right: 17.92%;
   }
-
+  .bio .container .img .square2::after {
+    right: 38.6%;
+  }
+  .bio .container .img .square3::before {
+    right: 46%;
+  }
+  .bio .container .img .square3::after {
+    right: 59.86%;
+  }
   
   /* QUOTES */
   section.quote {
