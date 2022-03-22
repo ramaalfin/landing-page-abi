@@ -157,50 +157,6 @@ img {
 }
 
 /* NAVBAR */
-.shadow-lg {
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.175) !important;
-}
-
-.navbar {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  z-index: 9;
-  background-color: white;
-}
-
-.navbar-brand {
-  color: var(--dark-color);
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.navbar-nav .nav-link {
-  color: var(--dark-color);
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-  border-radius: 5px;
-}
-
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-item.active .nav-link::after {
-  color: var(--dark-color);
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.navbar-nav .nav-item.active .nav-link,
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--dark-color);
-  background-color: rgb(248, 179, 13);
-  border-radius: 5px;
-  padding: 8px;
-}
-
-.nav-link:focus {
-  color: var(--dark-color);
-}
 
 /* BIO */
 .bio{
@@ -219,6 +175,10 @@ img {
 .bio .container .img img{
   margin-top: 10%;
   align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  object-fit: cover;
 }
 .bio .container .text{
   padding: 0px 35px;
@@ -327,6 +287,11 @@ img {
   font-size: 18px;
 }
 
+.impian .list .text-primary,
+.bukan-impian .list .text-primary {
+  color: #36adab!important;
+}
+
 /* IMPIAN */
 .impian .list{
   max-width: 600px;
@@ -355,7 +320,7 @@ img {
   margin: 10px 0px;
 }
 .bukan-impian .text{
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -368,7 +333,7 @@ img {
   background-color: var(--darkyellow);
   padding: 30px 25px;
   border-radius: 10px;
-  margin: 30px 10px;
+  margin: 30px auto;
   max-width: 75%;
 }
 .andai .list li{
@@ -422,6 +387,9 @@ section.quote{
 
 
 /* DEFINISI JMA */
+section.definisi{
+  padding: 0px 80px;
+}
 .definisi .row{
   align-items: center;
 }
@@ -430,6 +398,9 @@ section.quote{
 }
 .definisi .text .isi{
   font-size: 18px;
+}
+.definisi .img{
+  padding: 50px;
 }
 
 
@@ -502,14 +473,12 @@ section.quote{
 
 
 /* CARA KERJA */
-.kerja{
-  background-color: var(--darkyellow);
-}
+
 .kerja .title{
   background-color: var(--darkgreen);
   width: fit-content;
   padding: 15px 30px;
-  border-radius: 3px;
+  border-radius: 15px;
   margin-bottom: 40px;
 }
 .kerja .img{
@@ -539,18 +508,69 @@ section.quote{
 
 /* DOWNLOAD */
 .download{
-  background-color: var(--darkgreen);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
 }
-.download .content{
-  max-width: 70%;
-}
-.download .content p{
-  font-size: 18px;
-}
-.download .content:nth-child(1){
-  margin-bottom: 30px;
+.download .img{
+  position: absolute;
+  background-image: url("../img/priscilla-du-preez-XkKCui44iM0-unsplash.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 10%;
 }
 
+.download .text {
+  margin-top: 7%;
+}
+.download .content {
+  padding: 40px 50px;
+  background-color: var(--darkgreen);
+  font-size: 20px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0px auto 60px;
+}
+.download .main-content{
+  text-align: center;
+}
+.download .main-content .line {
+  content: '';
+  padding: 5px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: var(--darkyellow);
+  margin: 0px auto 30px;
+}
+.download .main-content p {
+  font-size: 24px;
+  width: 45%;
+  margin: 0px auto 60px;
+  line-height: normal;
+}
+.download .main-content .line{
+  content: '';
+  padding: 5px;
+  width: 38%;
+  border-radius: 10px;
+  background-color: var(--darkyellow);
+}
+.download .button{
+  width: max-content;
+}
+.download .button .btn {
+  background-color: var(--darkyellow);
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 20px 30px;
+}
+.download .button .btn{
+  background-color: var(--darkyellow);
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 20px;
+}
 
 /* QUESTION */
 .question{
@@ -561,8 +581,11 @@ section.quote{
   width: 90%;
 }
 .question .list{
-  width: 50%;
-  margin: 30px auto;
+  width: 65%;
+  margin: 50px auto 0px;
+  background-color: var(--darkgreen);
+  padding: 30px 25px;
+  border-radius: 10px;
 }
 .question .list ul li{
   font-size: 18px;
@@ -573,15 +596,27 @@ section.quote{
 /* layanan */
 .layanan{
   padding: 60px 0px;
+  background-color: var(--darkyellow);
 }
-.layanan .content{
+.layanan .content:nth-child(1){
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.layanan .content:nth-child(2){
+  margin: 0px auto;
   font-size: 20px;
-  width: 90%;
-  padding: 5px 0px;
+  margin-bottom: 40px;
+}
+.layanan .content:nth-child(3){
+  font-size: 18px;
+  padding: 0px 25px;
 }
 .layanan .list{
-  width: 50%;
-  margin: 30px auto;
+  width: 65%;
+  margin: 50px auto 0px;
+  background-color: var(--darkgreen);
+  padding: 30px 25px;
+  border-radius: 10px;
 }
 .layanan .list ul li{
   font-size: 18px;
