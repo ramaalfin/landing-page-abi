@@ -1650,6 +1650,25 @@ fieldset {
   .bio .container .img .square3::after {
     right: 59.86%;
   }
+
+  /* IMPIAN */
+
+  .impian .list, .bukan-impian .list, .andai .list {
+    font-size: 13px;
+  }
+
+  /* BUKAN IMPIAN */
+
+  .bukan-impian .text {
+    font-size: 15px;
+  }
+
+  /* SURVEY */
+
+  .survey {
+    font-size: 14px;
+    padding: 50px 15px;
+  }
   
   /* QUOTES */
   section.quote {
