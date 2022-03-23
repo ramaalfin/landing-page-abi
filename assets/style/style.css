@@ -1777,18 +1777,18 @@ fieldset {
     padding: 25px 15px;
   }
   .bio .cards .img img {
-    width: 150px !important;
-}
-  .bio .primary-img {
-    width: 180px;
-    height: 180px;
+    width: 135px !important;
+    height: 135px !important;
   }
   .bio .container .text {
     padding: 30px 10px;
   }
   .bio .container .text p {
-    margin: 15px 0px 30px;
+    margin: 15px 0px 25px;
     font-size: 13px;
+  }
+  .bio .container .text .btn {
+    padding: 7px 0px;
   }
   .bio .container .img .square1::before {
     right: 4.3%;
@@ -1906,20 +1906,68 @@ fieldset {
   section.download{
     padding: 35px 0px;
   }
-  .download .content {
-    max-width: 100%;
+  .download .text {
+    margin: 5% 0px;
+  }
+  .download .content{
+    padding: 15px;
+    width: 100%;
+    margin: 0px auto 30px;
+    font-size: 15px;
   }
   .download .content p {
     font-size: 14px;
   }
+  .download .main-content .line {
+    width: 60%;
+  }
+  .download .main-content p {
+    width: 65%;
+    margin: 0px auto 30px;
+    font-size: 15px;
+  }
+  .download .button {
+    width: fit-content;
+  }
+  .download .button .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 
   /* QUESTION */
+  .question {
+    padding: 30px 10px;
+  }
+  .question .content {
+    font-size: 16px;
+  }
+  .question .list {
+    margin: 20px auto 0px;
+    padding: 15px 10px;
+  }
   .question .list ul li {
     font-size: 14px;
   }
 
   /* LATANAN */
-
+  .layanan {
+    padding: 30px 10px;
+  }
+  .layanan .content:nth-child(1) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .layanan .content:nth-child(2) {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .layanan .content:nth-child(3) {
+    font-size: 15px;
+  }
+  .layanan .list {
+    width: 100%;
+    padding: 15px 5px;
+  }
   .layanan .list ul li {
     font-size: 14px;
   }
