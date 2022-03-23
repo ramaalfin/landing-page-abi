@@ -1579,7 +1579,7 @@ fieldset {
     margin-bottom: 5px;
   }
   .benefit .choose .line {
-    width: 85%;
+    width: 100%;
   }
 
 
@@ -1880,9 +1880,6 @@ fieldset {
 
   .benefit ul li {
     font-size: 14px;
-  }
-  .benefit .choose .line {
-    width: 93%;
   }
 
   /* CARA KERJA */
