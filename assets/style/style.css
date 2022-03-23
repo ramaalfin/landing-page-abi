@@ -1530,7 +1530,7 @@ fieldset {
   /* QUOTES */
   section.quote {
     padding: 10px;
-    min-height: 34vh;
+    min-height: 30vh;
   }
   section.quote h4{
     margin-top: 20px;
@@ -1614,10 +1614,10 @@ fieldset {
     width: 95%;
   }   
   .download .main-content .line {
-    width: 38%;
+    width: 55%;
   }
   .download .main-content p {
-    width: 55%;
+    width: 65%;
     margin: 0px auto 40px;
   }
   .download .button .btn {
