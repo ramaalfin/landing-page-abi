@@ -504,21 +504,32 @@ section.definisi{
   font-weight: bold;
   font-size: 16px;
 }
+.kerja .cards .img .tangan{
+  top: 26%;
+}
+.kerja .cards .img .polis{
+  top: 10%;
+}
 
 
 /* DOWNLOAD */
 .download{
-  position: relative;
   overflow: hidden;
   min-height: 100vh;
-}
-.download .img{
-  position: absolute;
+  position: relative;
   background-image: url("../img/priscilla-du-preez-XkKCui44iM0-unsplash.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
-  opacity: 10%;
+}
+.download .overlay{
+  background: linear-gradient(45deg,#fff, #fff);
+  opacity: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .download .text {
@@ -587,6 +598,9 @@ section.definisi{
   padding: 30px 25px;
   border-radius: 10px;
 }
+.question .list ul{
+  margin: 0;
+}
 .question .list ul li{
   font-size: 18px;
   margin-bottom: 5px;
@@ -608,7 +622,7 @@ section.definisi{
   margin-bottom: 40px;
 }
 .layanan .content:nth-child(3){
-  font-size: 18px;
+  font-size: 20px;
   padding: 0px 25px;
 }
 .layanan .list{
@@ -617,6 +631,9 @@ section.definisi{
   background-color: var(--darkgreen);
   padding: 30px 25px;
   border-radius: 10px;
+}
+.layanan .list ul{
+  margin: 0;
 }
 .layanan .list ul li{
   font-size: 18px;
@@ -1070,7 +1087,7 @@ fieldset {
     display: inline-block;
   }
   .bio .cards .img img{
-    width: 190px !important;
+    width: 200px !important;
     margin-top: 5%;
   }
   .bio .container .text p {
@@ -1156,7 +1173,21 @@ fieldset {
 
   
   /* DEFIINISI */
-  
+  section.definisi {
+    padding: 50px 80px;
+  }
+  .definisi .row {
+    flex-direction: column-reverse;
+  }
+  .definisi .img {
+    margin-top: 40px;
+    display: flex;
+    padding: unset;
+  }
+  .definisi .img img {
+    width: 50%;
+    position: relative;
+  }
   .definisi .text .title {
     margin-bottom: 15px;
   }
@@ -1220,55 +1251,79 @@ fieldset {
     font-size: 18px;
   }
   .layanan .list {
-    width: 70%;
+    width: 75%;
+  }
+  .layanan .content:nth-child(1) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .layanan .content:nth-child(2) {
+    margin: 0px auto;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .layanan .content:nth-child(3) {
+    font-size: 18px;
+    padding: 0px 25px;
+  }
+  .layanan .list {
+    padding: 25px 15px;
+    margin: 20px auto 0px;
+  }
+  .layanan .list ul li {
+    font-size: 16px;
   }
 
 
   /* DOWNLOAD */
-
-  .download .content p {
-    font-size: 17px;
+  .download {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .download .text {
+    margin-top: 8%;
   }
   .download .content {
+    padding: 25px;
+    margin: 0px auto 40px;
+    font-size: 17px;
     max-width: 90%;
+  }
+  .download .main-content .line {
+    width: 38%;
+    margin: 0px auto 20px;
+  }
+  .download .main-content p {
+    font-size: 18px;
+    margin: 0px auto 35px;
+  }
+  .download .button .btn {
+    font-size: 17px;
+    padding: 15px 20px;
   }
 
 
   /* QUESTION */
 
   .question {
-    padding: 50px 0px 10px;
+    padding: 0px 0px 50px;
   }
   .question .content {
     font-size: 18px;
     width: 100%;
   }
   .question .list {
-    width: 100%;
+    margin: 30px auto 0px;
+    padding: 25px 15px;
+    border-radius: 10px;
   }
+  
   .question .list ul li {
-    font-size: 17px;
+    font-size: 16px;
   }
 
 
-  /* LAYANAN */
-
-  .layanan {
-    padding: 10px;
-  }
-  .layanan .content {
-    font-size: 17px;
-    width: 100%;
-  }
-  .layanan .list {
-    width: 100%;
-  }
-  .layanan .list ul li {
-    font-size: 17px;
-  }
-  .layanan .list {
-    margin: 20px auto 30px;
-  }
+  
 
   /* ABOUT */
   section.about {
@@ -1398,7 +1453,8 @@ fieldset {
   }
 
   .bio .cards .img img {
-    width: 175px !important;
+    width: 160px !important;
+    height: 160px !important;
     margin-top: 5%;
   }
 
@@ -1497,7 +1553,9 @@ fieldset {
 
 
   /* DEFINISI */
-
+  section.definisi {
+    padding: 40px 10px;
+  }
   .definisi .text .isi {
     font-size: 17px;
   }
@@ -1513,7 +1571,6 @@ fieldset {
   }
   .benefit ul li {
     margin-bottom: 3px;
-    font-size: 16px;
   }
 
   .benefit .choose .sub-title {
@@ -1535,6 +1592,70 @@ fieldset {
   }
   .kerja .content {
     padding: 10px 20px;
+  }
+
+  /* DOWNLOAD */
+
+  .download {
+    min-height: fit-content;
+    background-color: #f6f6f6;
+    background-image: unset;
+  }
+  .download .overlay {
+    opacity: 0%;
+  }
+  .download .text {
+    margin: 12% 0px;
+  } 
+  .download .content {
+    padding: 20px;
+    max-width: 100%;
+    width: 95%;
+  }   
+  .download .main-content .line {
+    width: 38%;
+  }
+  .download .main-content p {
+    width: 55%;
+    margin: 0px auto 40px;
+  }
+  .download .button .btn {
+    padding: 10px 20px;
+  }
+
+  /* QUESTION */
+
+  .question {
+    padding: 35px 15px;
+  }
+  .question .content {
+    font-size: 17px;
+  }
+  .question .list {
+    width: 100%;
+    margin: 25px auto 0px;
+  }
+
+  /* LAYANAN */
+
+  .layanan {
+    padding: 40px 10px;
+  }
+  .layanan .content:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .layanan .content:nth-child(2) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .layanan .content:nth-child(3) {
+    font-size: 17px;
+    padding: unset;
+  }
+  .layanan .list {
+    width: 100%;
+    padding: 20px 10px;
   }
 
   /* ABOUT */
