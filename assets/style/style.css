@@ -115,7 +115,6 @@ img {
   top: 30%;
   left: 10%;
   width: 80%;
-  transform: translate(-50%, -50%);
   text-align: left;
   color: #fff;
 }
@@ -419,7 +418,8 @@ section.definisi{
 
 }
 .benefit .title {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 .benefit .sub-title p{
   padding: 5px 20px;
