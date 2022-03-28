@@ -72,3 +72,5 @@ $('.parent-container').magnificPopup({
   }
 });
 
+
+// cara kerja

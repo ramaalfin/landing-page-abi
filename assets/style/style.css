@@ -287,7 +287,8 @@ img {
 }
 
 .impian .list .text-primary,
-.bukan-impian .list .text-primary {
+.bukan-impian .list .text-primary
+{
   color: #36adab!important;
 }
 
@@ -335,8 +336,8 @@ img {
   margin: 30px auto;
   max-width: 75%;
 }
-.andai .list li{
-  margin-bottom: 10px;
+.andai .list svg{
+  color: #36adab;
 }
 
 
@@ -385,24 +386,6 @@ section.quote{
 }
 
 
-/* DEFINISI JMA */
-section.definisi{
-  padding: 0px 80px;
-}
-.definisi .row{
-  align-items: center;
-}
-.definisi .text .title{
-  margin-bottom: 20px;
-}
-.definisi .text .isi{
-  font-size: 18px;
-}
-.definisi .img{
-  padding: 50px;
-}
-
-
 /* BENEFIT */
 
 .benefit{
@@ -448,10 +431,12 @@ section.definisi{
   font-size: 24px;
   margin-bottom: 10px;
 }
+.benefit .choose .coba{
+  max-width: fit-content;
+}
 .benefit .choose .line{
   content: '';
   padding: 5px;
-  width: 38%;
   border-radius: 10px;
   background-color: var(--darkgreen);
 }
@@ -469,6 +454,38 @@ section.definisi{
   font-size: 18px;
   text-decoration: none;
   color: #000;
+}
+
+
+/* DEFINISI JMA */
+section.definisi{
+  padding: 0px 80px;
+}
+.definisi .row{
+  align-items: center;
+}
+.definisi .text .title{
+  margin-bottom: 3px;
+}
+.definisi .text .isi{
+  font-size: 18px;
+}
+.definisi .img{
+  padding: 50px;
+}
+.definisi .text .head{
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.definisi .text .coba{
+  max-width: fit-content;
+}
+.definisi .text .line{
+  content: '';
+  padding: 4px;
+  border-radius: 10px;
+  background-color: var(--darkyellow);
+  margin-bottom: 20px;
 }
 
 
@@ -511,6 +528,25 @@ section.definisi{
   top: 10%;
 }
 
+/* chevron */
+.kerja .cards .arrow{
+  position: relative;
+  top: 20%;
+}
+.kerja .cards .arrow-bottom{
+  position: relative;
+  left: 40%;
+  color: var(--darkyellow);
+}
+
+.kerja .cards .arrow svg{
+  color: var(--darkyellow);
+}
+
+.kerja .coba{
+  display: flex;
+}
+
 
 /* DOWNLOAD */
 .download{
@@ -533,14 +569,18 @@ section.definisi{
 }
 
 .download .text {
-  margin-top: 7%;
+  margin-top: 9%;
 }
-.download .content {
-  padding: 40px 50px;
-  background-color: var(--darkgreen);
+.download .content p{
+  margin-bottom: 30px;
   font-size: 20px;
+}
+.download .content .btn{
+  padding: 10px 15px;
+  background-color: var(--darkgreen);
+  font-size: 18px;
   border-radius: 10px;
-  width: 70%;
+  width: fit-content;
   margin: 0px auto 60px;
 }
 .download .main-content{
@@ -574,7 +614,7 @@ section.definisi{
   background-color: var(--darkyellow);
   border-radius: 8px;
   font-size: 24px;
-  padding: 20px 30px;
+  padding: 10px 20px;
 }
 .download .button .btn{
   background-color: var(--darkyellow);
@@ -604,6 +644,7 @@ section.definisi{
 .question .list ul li{
   font-size: 18px;
   margin-bottom: 5px;
+  list-style: none;
 }
 
 
@@ -1212,9 +1253,6 @@ fieldset {
   .benefit ul li {
     font-size: 16px;
   }
-  .benefit .choose .line {
-    width: 60%;
-  }
   .benefit .btn a {
     font-size: 17px;
   }
@@ -1224,14 +1262,33 @@ fieldset {
 
   .kerja .content {
     padding: 10px;
-    max-width: fit-content;
   }
   .kerja .container .row{
-    width: inherit;
-    --bs-gutter-x: 0;
+    justify-content: center;
+    justify-items: center;
   }
   .kerja .content p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .kerja .row{
+    display: grid;
+  }
+  .kerja .coba{
+    display: grid;
+    justify-items: center;
+    width: fit-content;
+  }
+  .kerja .cards .arrow {
+    position: relative;
+    top: unset;
+  }
+  .kerja .cards .arrow-right{
+    transform: rotate(90deg);
+    width: fit-content;
+  }
+  .kerja .cards .arrow-left{
+    transform: rotate(270deg);
+    width: fit-content;
   }
 
 
@@ -1514,7 +1571,7 @@ fieldset {
   /* ANDAI */
 
   .andai .list {
-    padding: 15px 5px;
+    padding: 15px;
     margin: 30px 0px 0px;
     max-width: 100%;
 }
@@ -1577,9 +1634,6 @@ fieldset {
   .benefit .choose .sub-title {
     font-size: 20px;
     margin-bottom: 5px;
-  }
-  .benefit .choose .line {
-    width: 100%;
   }
 
 
