@@ -1677,6 +1677,9 @@ fieldset {
   .download .button .btn {
     padding: 10px 20px;
   }
+  .download .content .btn {
+    margin: 0px auto 0px;
+}
 
   /* QUESTION */
 
