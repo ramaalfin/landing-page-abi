@@ -1617,6 +1617,10 @@ fieldset {
   .definisi .text .isi {
     font-size: 17px;
   }
+  .definisi .text .head {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
 
 
   /* BENEFIT */
@@ -1632,7 +1636,7 @@ fieldset {
   }
 
   .benefit .choose .sub-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
   }
 
@@ -1932,11 +1936,18 @@ fieldset {
   .definisi .text .isi {
     font-size: 13px;
   } 
+  .definisi .text .head {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
 
   /* BENEFIT */
 
   .benefit ul li {
     font-size: 14px;
+  }
+  .benefit .choose .sub-title {
+    font-size: 16px;
   }
 
   /* CARA KERJA */
