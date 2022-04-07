@@ -305,6 +305,11 @@ img {
   margin-bottom: 10px;
 }
 
+.impian .list svg {
+  width: 25px;
+  height: 25px;
+}
+
 
 /* BUKAN IMPIAN */
 
@@ -527,6 +532,9 @@ section.definisi{
 .kerja .cards .img .polis{
   top: 10%;
 }
+.kerja .bawah{
+  margin-top: 10px;
+}
 
 /* chevron */
 .kerja .cards .arrow{
@@ -569,7 +577,7 @@ section.definisi{
 }
 
 .download .text {
-  margin-top: 9%;
+  margin-top: 10%;
 }
 .download .content p{
   margin-bottom: 30px;
@@ -631,15 +639,15 @@ section.definisi{
   font-size: 20px;
   width: 90%;
 }
-.question .list{
-  width: 65%;
+.question .list {
+  width: 55%;
   margin: 50px auto 0px;
   background-color: var(--darkgreen);
-  padding: 30px 25px;
+  padding: 30px 30px;
   border-radius: 10px;
 }
-.question .list ul{
-  margin: 0;
+.question .list ul {
+  padding-left: unset;
 }
 .question .list ul li{
   font-size: 18px;
@@ -684,18 +692,20 @@ section.definisi{
 
 
 /* Tentang Kami */
+/* Tentang Kami */
 section.about{
-  background-color: var(--darkgreen);
+  background-color: var(--darkyellow);
   padding: 100px 80px;
 }
 
 .card {
   margin: auto;
-  width: 85%;
+  width: 60%;
   position: relative;
-  background-color: #fff;
+  background-color: unset;
   border-radius: 8px;
-  box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+  border: unset;
+  box-shadow: unset;
 }
 
 .card .card-body {
@@ -706,7 +716,7 @@ section.about{
   align-items: center;
   display: flex;
   padding-bottom: 20px;
-  border-bottom: 1px solid #f0f0f3;
+  border-bottom: unset;
 }
 
 .card .card-body .items-about .items-menu {
@@ -748,6 +758,30 @@ section.about{
   display: block;
 }
 
+.card .owl-theme .owl-nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+  font-size: 80px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  top: 25%;
+}
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  top: 25%;
+  right: 0%;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: unset;
+  color: unset;
+  text-decoration: none;
+}
+
 /* Slider About */
 .carousel-wrap {
   margin: 20px auto;
@@ -761,6 +795,13 @@ section.about{
   position: relative;
   z-index: 100; 
 }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
 
 /* end fix */
 
@@ -1274,9 +1315,11 @@ fieldset {
     display: grid;
   }
   .kerja .coba{
-    display: grid;
+    display: flex;
     justify-items: center;
     width: fit-content;
+    flex-direction: column;
+    align-items: center !important;
   }
   .kerja .cards .arrow {
     position: relative;
@@ -1289,6 +1332,16 @@ fieldset {
   .kerja .cards .arrow-left{
     transform: rotate(270deg);
     width: fit-content;
+  }
+  .kerja .bawah{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .kerja .bawah .coba:nth-of-type(1),
+  .kerja .bawah .coba:nth-of-type(2),
+  .kerja .bawah .coba:nth-of-type(3) {
+    flex-direction: column-reverse;
   }
 
 
@@ -1339,13 +1392,16 @@ fieldset {
     background-size: contain;
   }
   .download .text {
-    margin-top: 8%;
+    margin-top: 6%;
   }
   .download .content {
     padding: 25px;
-    margin: 0px auto 40px;
+    margin: 0px auto;
     font-size: 17px;
     max-width: 90%;
+  }
+  .download .content .btn {
+    margin: 0px auto;
   }
   .download .main-content .line {
     width: 38%;
@@ -1750,7 +1806,7 @@ fieldset {
     padding: 0px 16px;
   }
   .mfp-image-holder .mfp-content {
-    max-width: 65%;
+    max-width: 100%;
   }
 
   /* FOOTER */

@@ -34,19 +34,20 @@
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 5,
-  autoplay: true,
+  autoplay: false,
   dots: false,
   responsive: {
     0: {
       items: 1
     },
     600: {
-      items: 3
+      items: 1
     },
     1000: {
-      items: 5
+      items: 1
     }
-  }
+  },
+  nav:true
 });
 
 // QUOTE SLIDE
@@ -71,6 +72,3 @@ $('.parent-container').magnificPopup({
     }
   }
 });
-
-
-// cara kerja
