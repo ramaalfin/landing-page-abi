@@ -715,8 +715,13 @@ section.about{
 .card .card-body .items-about {
   align-items: center;
   display: flex;
-  padding-bottom: 20px;
   border-bottom: unset;
+  background-color: var(--darkgreen);
+  border-radius: 6px;
+}
+
+.card .card-body .items-about .items-menu:hover{
+  background-color: var(--green);
 }
 
 .card .card-body .items-about .items-menu {
@@ -729,7 +734,7 @@ section.about{
 .card .card-body .items-about .items-menu a {
   display: block;
   padding: 10px 0px;
-  color: var(--darkgreen);
+  color: #fff;
   border-radius: 4px;
   text-decoration: none;
   text-transform: capitalize;
@@ -738,7 +743,7 @@ section.about{
 
 .card .card-body .items-about .items-menu a.active {
   color: #fff;
-  background-color: var(--darkgreen);
+  background-color: var(--green);
 }
 
 
