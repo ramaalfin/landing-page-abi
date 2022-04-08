@@ -31,31 +31,31 @@
   
 })(window.jQuery);
 
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 5,
-  autoplay: false,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  nav:true
-});
+// $('.owl-carousel').owlCarousel({
+//   loop: true,
+//   margin: 5,
+//   autoplay: false,
+//   dots: false,
+//   responsive: {
+//     0: {
+//       items: 1
+//     },
+//     600: {
+//       items: 1
+//     },
+//     1000: {
+//       items: 1
+//     }
+//   },
+//   nav:true
+// });
 
 // QUOTE SLIDE
 
 
 // MODAL TENTANG KAMI
 
-$('.parent-container').magnificPopup({
+$('.slider-container').magnificPopup({
   delegate: 'a',
   type: 'image',
   removalDelay: 300,

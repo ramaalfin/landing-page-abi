@@ -698,12 +698,24 @@ section.about{
   padding: 100px 80px;
 }
 
+.about .container{
+  padding: 0;
+}
+
+.about .bg{
+  max-width: 60%;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
 .card {
   margin: auto;
   width: 60%;
   position: relative;
-  background-color: #fff;
-  border-radius: 8px;
+  background-color: unset;
+  border-radius: unset !important;
   border: unset;
   box-shadow: unset;
 }
@@ -712,42 +724,41 @@ section.about{
   padding: 15px;
 }
 
-.card .card-body .items-about {
+.about .items-about {
   align-items: center;
   display: flex;
   border-bottom: unset;
   background-color: var(--darkgreen);
-  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
-.card .card-body .items-about .items-menu:hover{
+.about .items-about .items-menu:hover{
   background-color: var(--green);
 }
 
-.card .card-body .items-about .items-menu {
+.about .items-about .items-menu {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
   list-style: none;
 }
 
-.card .card-body .items-about .items-menu a {
+.about .items-about .items-menu a {
   display: block;
   padding: 10px 0px;
   color: #fff;
-  border-radius: 4px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.15s ease-in-out;
 }
 
-.card .card-body .items-about .items-menu a.active {
+.about .items-about .items-menu a.active {
   color: #fff;
-  background-color: var(--green);
+  background-color: var(--darkgreen);
 }
 
 
-.card .card-body .items-about .items-menu a span.text {
+.about .items-about .items-menu a span.text {
   display: block;
 }
 
@@ -1476,7 +1487,14 @@ fieldset {
   .mfp-image-holder .mfp-content {
     max-width: 65%;
   }
-
+  .about .slider-nav::after, .slider-nav::before {
+    width: 3rem;
+    height: 3rem;
+  }
+  .about .bg {
+    max-width: 55%;
+  }
+  
 
   /* FOOTER */
   .footer-logo img {
@@ -1800,11 +1818,14 @@ fieldset {
     width: 100%;
     border-radius: 5px;
   }
+  .about .bg {
+    max-width: 75%;
+  }
   .card .card-body .items-about .items-menu a {
     padding: 5px 10px;
   }
   .card .img-fluid {
-    max-width: 85%;
+    max-width: 100%;
     margin: 0px auto;
   }
   .card .tab-content {
@@ -2120,15 +2141,15 @@ fieldset {
   .card .card-body .items-about .items-menu a {
     padding: 5px 10px;
   }
-  .card .img-fluid {
-    max-width: 85%;
-    margin: 0px auto;
+  .about .bg {
+    max-width: 70%;
+  }
+  .about .slider-nav::after, .slider-nav::before {
+    width: 2rem;
+    height: 2rem;
   }
   .card .tab-content {
     padding: 0px 16px;
-  }
-  .mfp-image-holder .mfp-content {
-    max-width: 65%;
   }
 
   

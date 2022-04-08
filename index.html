@@ -44,6 +44,9 @@
     <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor/slick-1.8.1/slick/slick-theme.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.2/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
 
     <!-- style -->
     <link rel="stylesheet" href="assets/style/style.css" />
@@ -608,22 +611,104 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="card" data-aos="fade-up" data-aos-delay="900">
-                <div class="card-body container" data-aos="fade-in" data-aos-delay="1400">
-                  <ul class="items-about nav nav-tabs">
-                    <li class="items-menu">
-                      <a href="javascript:void(0)" class="tab active" data-id="first">
-                        <span class="text">Company Profile</span>
-                      </a>
-                    </li>
-      
-                    <li class="items-menu">
-                      <a href="javascript:void(0)" class="tab" data-id="third">
-                        <span class="text">Testimoni Client</span>
-                      </a>
-                    </li>
-                  </ul>
-      
+              <div class="card">
+                <ul class="items-about nav nav-tabs">
+                  <li class="items-menu">
+                    <a href="javascript:void(0)" class="tab active" data-id="first">
+                      <span class="text">Company Profile</span>
+                    </a>
+                  </li>
+    
+                  <li class="items-menu">
+                    <a href="javascript:void(0)" class="tab" data-id="second">
+                      <span class="text">Testimoni Client</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+  
+                <div class="tab-content">
+                  <div class="tab-pane active" id="first">
+                    <div class="swiffy-slider slider-nav-light">
+                      <div class="bg">
+                        <ul class="slider-container">
+                          <li>
+                            <a href="assets/img/company profile/Picture1.png" class="modal-popup">
+                              <img
+                                src="assets/img/company profile/Picture1.png"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="assets/img/company profile/charter.png" class="modal-popup">
+                              <img
+                                src="assets/img/company profile/charter.png"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="assets/img/company profile/jma syariah.webp" class="modal-popup">
+                              <img
+                                src="assets/img/company profile/jma syariah.webp"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  
+                      <button type="button" class="slider-nav"></button>
+                      <button type="button" class="slider-nav slider-nav-next"></button>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="second">
+                    <div class="swiffy-slider slider-nav-light">
+                      <div class="bg">
+                        <ul class="slider-container">
+                          <li>
+                            <a href="assets/img/testimoni klaim/AdMedika _ APPROVED CLAIM (8) (1)-1.png" class="modal-popup">
+                              <img
+                                src="assets/img/testimoni klaim/AdMedika _ APPROVED CLAIM (8) (1)-1.png"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="assets/img/1.png" class="modal-popup">
+                              <img
+                                src="assets/img/1.png"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="assets/img/2.png" class="modal-popup">
+                              <img
+                                src="assets/img/2.png"
+                                alt="your image"
+                                class="img-fluid"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  
+                      <button type="button" class="slider-nav"></button>
+                      <button type="button" class="slider-nav slider-nav-next"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="card" data-aos="fade-up" data-aos-delay="900">
+                <div class="card-body container" data-aos="fade-in" data-aos-delay="1400">  
                   <div class="tab-content">
                     <div class="tab-pane active" id="first">
                       <div class="carousel-wrap">
@@ -769,7 +854,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -891,6 +976,7 @@
     <script src="assets/vendor/Magnific-Popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/vendor/modal-popup-ybox/dist/js/yBox.min.js"></script>
     <script src="assets/vendor/slick-1.8.1/slick/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.2/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
