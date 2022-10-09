@@ -1084,10 +1084,8 @@ fieldset {
 	width:100%;
 	border:1px solid #CCC;
 	margin:0 0 5px;
-  background: #151414;
 	padding:10px;
   font-weight: 500;
-  color: #e7f1ff;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
@@ -1102,7 +1100,7 @@ fieldset {
   resize:none;
 }
 
-#contact button {
+#contact .submitBtn {
 	cursor:pointer;
 	width:100%;
 	border:none;
@@ -1113,7 +1111,7 @@ fieldset {
 	font-size:15px;
 }
 
-#contact button:hover {
+#contact .submitBtn:hover {
 	background:var(--green);
 	transition:background-color 0.3s ease-in-out;
 }
