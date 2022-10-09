@@ -761,7 +761,14 @@
                           <p class="mb-2">Untuk informasi lebih lanjut silahkan mengisi data berikut.</p>
 
                           <div class="email-form">
-                            <form id="contact" action="mailto:ramaalfin7@gmail.com?subject=Testing out mailto!" method="post" enctype="text/plain">
+                            <form id="contact" action="https://formsubmit.co/wanrid.life@gmail.com" method="POST">
+                    
+                              <!-- Disable Captcha -->
+                              <input type="hidden" name="_captcha" value="false">
+                    
+                              <input type="hidden" name="_next" value="https://askescorporatesyariah.netlify.app/success.html">
+
+                              <input type="hidden" name="_subject" value="Askes Corporate Syariah - Calon Pelanggan Asuransi">
 
                               <fieldset>
                                 <input placeholder="Nama Anda" type="text" name="name" tabindex="2" required>
@@ -773,7 +780,7 @@
                                 <textarea placeholder="Pesan..." name="message" tabindex="5" required ></textarea>
                               <fieldset>
                                 
-                              <input class="submitBtn" type="submit">
+                              <button class="submitBtn" name="submit" type="submit">Submit</button>
                             </form>
                           </div>
 
