@@ -761,12 +761,23 @@
                           <p class="mb-2">Untuk informasi lebih lanjut silahkan mengisi data berikut.</p>
 
                           <div class="email-form">
-                            <form id="contact" action="https://getform.io/f/d3b23f35-c2da-49dc-aacc-f0e2335f63f7" method="POST">
-                              <input type="text" name="name" placeholder="Masukkan nama anda">
-                              <input placeholder="Masukkan alamat email" type="email" name="email" required>
-                              <textarea placeholder="pesan..." name="message" required ></textarea>
+                            <form id="contact" action="https://formsubmit.co/ramaalfin7@gmail.com" method="POST">
+                    
+                              <!-- Disable Captcha -->
+                              <input type="hidden" name="_captcha" value="false">
+                    
+                              <input type="hidden" name="_next" value="https://askescorporatesyariah.netlify.app/success.html">
 
-                              <button class="submitBtn" name="submit" type="submit">Kirim</button>
+                              <input type="hidden" name="_subject" value="Email Masuk">
+
+                              <fieldset>
+                                <input placeholder="alamat email" type="email" name="email" tabindex="2" required>
+                              </fieldset>
+                              <fieldset>
+                                <textarea placeholder="pesan..." name="message" tabindex="5" required ></textarea>
+                              <fieldset>
+                                
+                              <button name="submit" type="submit">Submit</button>
                             </form>
                           </div>
 
